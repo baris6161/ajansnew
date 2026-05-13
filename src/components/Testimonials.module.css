@@ -1,0 +1,109 @@
+.section {
+  padding: var(--section-y) 0;
+  background: linear-gradient(180deg, var(--bg-soft) 0%, var(--surface) 45%, var(--bg) 100%);
+}
+
+.inner {
+  width: var(--container);
+  margin-inline: auto;
+}
+
+.head {
+  text-align: center;
+  max-width: 36rem;
+  margin: 0 auto clamp(2.35rem, 4.5vw, 3.5rem);
+}
+
+.head h2 {
+  margin-bottom: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(1.25rem, 2.5vw, 2rem);
+  align-items: stretch;
+}
+
+.card {
+  position: relative;
+  background: linear-gradient(165deg, var(--card) 0%, color-mix(in srgb, var(--surface) 70%, var(--card)) 100%);
+  border-radius: var(--radius-lg);
+  border: var(--card-edge);
+  padding: clamp(1.85rem, 3vw, 2.35rem) clamp(1.5rem, 2.5vw, 2rem);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  min-height: 100%;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 1.5rem;
+  right: 1.5rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--gold-soft) 65%, transparent), transparent);
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-card-hover);
+  transform: translateY(-3px);
+}
+
+.quoteIcon {
+  color: var(--gold);
+  opacity: 0.42;
+  margin-bottom: -0.15rem;
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+  color: color-mix(in srgb, var(--gold-dark) 88%, var(--gold));
+}
+
+.quote {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(1.08rem, 1.45vw, 1.22rem);
+  font-weight: 400;
+  line-height: 1.62;
+  letter-spacing: -0.01em;
+  color: color-mix(in srgb, var(--text) 12%, var(--text-muted));
+  margin: 0;
+  flex: 1;
+}
+
+.role {
+  margin-top: 0.35rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid color-mix(in srgb, var(--border) 90%, transparent);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 540px;
+    margin-inline: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card:hover {
+    transform: none;
+  }
+}

@@ -1,0 +1,148 @@
+.root {
+  background: linear-gradient(
+    185deg,
+    color-mix(in srgb, var(--espresso) 88%, #4a3d34) 0%,
+    color-mix(in srgb, var(--espresso) 94%, var(--gold-dark)) 38%,
+    #2c241f 100%
+  );
+  color: color-mix(in srgb, var(--surface) 86%, transparent);
+  padding: clamp(3rem, 5.5vw, 4.25rem) 0 2.25rem;
+  border-top: 1px solid color-mix(in srgb, var(--gold) 22%, transparent);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--gold-soft) 12%, transparent);
+}
+
+.inner {
+  width: var(--container);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: clamp(1.75rem, 3vw, 2.5rem) clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.brandName {
+  font-family: var(--font-serif);
+  font-size: 1.55rem;
+  color: color-mix(in srgb, #fff9f1 96%, var(--gold-soft));
+}
+
+.brandTag {
+  font-size: 0.62rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--surface) 58%, var(--gold-soft));
+  font-weight: 600;
+}
+
+.blurb {
+  margin: 0;
+  font-size: 0.96rem;
+  line-height: 1.68;
+  color: color-mix(in srgb, var(--surface) 68%, var(--text-muted));
+  max-width: 28rem;
+}
+
+.col h3 {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: color-mix(in srgb, var(--gold-soft) 92%, var(--surface));
+  margin: 0 0 1.05rem;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 0.94rem;
+  line-height: 1.55;
+  color: color-mix(in srgb, var(--surface) 78%, transparent);
+}
+
+.list a {
+  color: inherit;
+  text-decoration: none;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.list a:hover {
+  color: color-mix(in srgb, #fff 92%, var(--gold-soft));
+}
+
+.bottom {
+  width: var(--container);
+  margin: 2.75rem auto 0;
+  padding-top: 1.65rem;
+  border-top: 1px solid color-mix(in srgb, var(--gold) 14%, transparent);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.84rem;
+  color: color-mix(in srgb, var(--surface) 52%, var(--text-muted));
+}
+
+.legal {
+  display: flex;
+  gap: 1.35rem;
+}
+
+.legal a {
+  color: inherit;
+  text-decoration: none;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.legal a:hover {
+  color: color-mix(in srgb, #fff 88%, var(--gold-soft));
+}
+
+.credit {
+  font-size: 0.84rem;
+  color: color-mix(in srgb, var(--surface) 42%, var(--text-muted));
+}
+
+.creditLink {
+  color: color-mix(in srgb, var(--gold-soft) 80%, var(--surface));
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.creditLink:hover {
+  color: var(--gold-soft);
+}
+
+@media (max-width: 1023px) {
+  .inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

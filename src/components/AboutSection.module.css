@@ -1,0 +1,359 @@
+.section {
+  padding: clamp(2.75rem, 6vw, 5rem) 0;
+  position: relative;
+  background: linear-gradient(180deg, transparent 0%, color-mix(in srgb, var(--surface-warm) 42%, transparent) 48%, transparent 100%);
+}
+
+.inner {
+  width: var(--container);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.1fr) minmax(220px, min(30%, 320px));
+  gap: clamp(1.75rem, 3.5vw, 3rem);
+  align-items: start;
+}
+
+.visual {
+  position: relative;
+}
+
+.cardFrame {
+  position: relative;
+  padding: clamp(11px, 1.35vw, 16px);
+  border-radius: calc(var(--radius-lg) + 10px);
+  background: linear-gradient(158deg, var(--card) 0%, var(--card-muted) 52%, var(--surface-warm) 100%);
+  border: 1px solid color-mix(in srgb, var(--gold-soft) 42%, var(--border));
+  box-shadow:
+    0 42px 100px rgba(42, 33, 27, 0.12),
+    0 16px 40px rgba(42, 33, 27, 0.07),
+    inset 0 1px 0 color-mix(in srgb, #fff 72%, transparent),
+    inset 0 0 0 1px color-mix(in srgb, var(--gold-soft) 14%, transparent);
+  max-width: 460px;
+}
+
+.portraitWrap {
+  position: relative;
+}
+
+.portrait {
+  position: relative;
+  border-radius: calc(var(--radius-lg) + 2px);
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, #fff 58%, transparent),
+    0 24px 60px rgba(42, 33, 27, 0.13);
+}
+
+.portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  display: block;
+}
+
+.portraitVignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    transparent 42%,
+    color-mix(in srgb, var(--espresso) 28%, transparent) 100%
+  );
+  opacity: 0.82;
+}
+
+.signature {
+  position: absolute;
+  right: clamp(1rem, 3.2vw, 1.65rem);
+  bottom: clamp(0.95rem, 2.8vw, 1.5rem);
+  left: auto;
+  transform: none;
+  z-index: 2;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(1.28rem, 2.4vw, 1.85rem);
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: color-mix(in srgb, var(--gold-soft) 92%, #fffaf5);
+  text-shadow:
+    0 2px 8px rgba(42, 33, 27, 0.35),
+    0 0 1px rgba(42, 33, 27, 0.25);
+  pointer-events: none;
+  text-align: right;
+  line-height: 1.1;
+}
+
+.copy {
+  position: relative;
+  min-width: 0;
+  padding-top: 0.15rem;
+}
+
+.eyebrow {
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--gold-dark);
+  margin: 0 0 1.25rem;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.95rem, 3.6vw, 2.85rem);
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: -0.032em;
+  color: var(--text);
+  margin: 0 0 1.1rem;
+}
+
+.lead {
+  margin: 0 0 1.65rem;
+  font-size: clamp(1.04rem, 1.3vw, 1.14rem);
+  line-height: 1.82;
+  color: color-mix(in srgb, var(--text-muted) 86%, var(--text));
+  font-weight: 400;
+  max-width: 36rem;
+  letter-spacing: 0.015em;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.list li {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-start;
+  font-size: 1.04rem;
+  line-height: 1.58;
+  font-weight: 500;
+  color: color-mix(in srgb, var(--text) 16%, var(--text-muted));
+}
+
+.check {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  margin-top: 2px;
+  background: linear-gradient(145deg, var(--gold-soft) 0%, color-mix(in srgb, var(--gold-soft) 72%, var(--card-muted)) 100%);
+  color: var(--gold-dark);
+  border: 1px solid color-mix(in srgb, var(--gold) 30%, var(--border));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 1px 0 color-mix(in srgb, #fff 55%, transparent);
+}
+
+.mapAside {
+  position: sticky;
+  top: calc(var(--header-h) + 1rem);
+  align-self: start;
+  min-width: 0;
+  width: 100%;
+}
+
+.mapFigure {
+  margin: 0;
+  padding: clamp(1rem, 2vw, 1.5rem) clamp(0.85rem, 1.75vw, 1.25rem);
+  border-radius: calc(var(--radius-lg) + 2px);
+  background: linear-gradient(
+    172deg,
+    color-mix(in srgb, var(--surface) 96%, var(--gold-soft)) 0%,
+    var(--card) 40%,
+    color-mix(in srgb, var(--card-muted) 88%, var(--card)) 100%
+  );
+  border: 1px solid color-mix(in srgb, var(--gold-soft) 42%, var(--border));
+  box-shadow:
+    0 32px 72px rgba(42, 33, 27, 0.1),
+    0 12px 28px rgba(184, 135, 70, 0.1),
+    inset 0 1px 0 #fff,
+    inset 0 0 0 1px color-mix(in srgb, var(--gold) 8%, transparent);
+}
+
+.mapKicker {
+  margin: 0 0 0.3rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+}
+
+.mapTitle {
+  margin: 0 0 0.9rem;
+  font-family: var(--font-serif);
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  color: var(--text);
+}
+
+.mapBoard {
+  display: block;
+}
+
+.mapSvgWrap {
+  position: relative;
+  border-radius: var(--radius-md);
+  padding: 0.4rem 0.3rem;
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  border: 1px solid color-mix(in srgb, var(--border) 85%, var(--gold-soft));
+  box-shadow: inset 0 1px 0 color-mix(in srgb, #fff 80%, transparent);
+}
+
+.mapSvg {
+  width: 100%;
+  height: auto;
+  min-height: 380px;
+  max-height: 480px;
+  display: block;
+}
+
+.mapLabel {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  fill: color-mix(in srgb, var(--gold-dark) 85%, var(--text));
+  letter-spacing: 0.04em;
+  pointer-events: none;
+}
+
+.germanyFill {
+  stroke: none;
+}
+
+.germanyStroke {
+  fill: none;
+  stroke: color-mix(in srgb, var(--gold-dark) 62%, var(--text-muted));
+  stroke-width: 1.2;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-dasharray: 3.5 6;
+  opacity: 0.8;
+}
+
+.mapMarker {
+  cursor: default;
+}
+
+.mapDotOuter {
+  fill: color-mix(in srgb, var(--gold-soft) 75%, transparent);
+  stroke: color-mix(in srgb, var(--gold) 35%, transparent);
+  stroke-width: 0.6;
+}
+
+.mapDot {
+  fill: var(--gold);
+  stroke: color-mix(in srgb, #fff 80%, var(--gold-dark));
+  stroke-width: 0.45;
+}
+
+.mapLegend {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.45rem 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: color-mix(in srgb, var(--text) 18%, var(--text-muted));
+  line-height: 1.35;
+}
+
+.mapLegend li {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.legendDot {
+  flex-shrink: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--gold);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--gold-soft) 70%, transparent);
+}
+
+.mapCitiesLine {
+  margin: 1.25rem 0 0;
+  padding-top: 1.1rem;
+  border-top: 1px solid color-mix(in srgb, var(--gold-soft) 38%, var(--border));
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.55;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+@media (max-width: 1060px) {
+  .inner {
+    grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr);
+  }
+
+  .mapAside {
+    grid-column: 2;
+    grid-row: 2;
+    position: relative;
+    top: auto;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+
+  .cardFrame {
+    max-width: 420px;
+    margin-inline: auto;
+  }
+
+  .mapAside {
+    grid-column: 1;
+    grid-row: auto;
+    max-width: 420px;
+    margin-inline: auto;
+    margin-top: 2.25rem;
+  }
+
+  .mapSvg {
+    min-height: 280px;
+    max-height: 360px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mapSvg {
+    min-height: 220px;
+  }
+}
+
+@media (max-width: 390px) {
+  .mapFigure {
+    padding: 0.9rem 0.75rem 1rem;
+  }
+}
