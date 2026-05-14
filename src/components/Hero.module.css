@@ -351,8 +351,11 @@
 }
 
 .wordReveal {
-  display: inline;
+  display: inline-block;
   opacity: 0;
+  /* inline-block + will-change forces each word onto its own compositing
+     layer — prevents Safari/mobile from dropping opacity mid-animation   */
+  will-change: opacity, transform;
   animation: wordUp 1.5s cubic-bezier(0.12, 1, 0.28, 1) var(--word-delay, 0s) both;
 }
 
@@ -365,5 +368,6 @@
   .wordReveal {
     opacity: 1;
     animation: none;
+    will-change: auto;
   }
 }

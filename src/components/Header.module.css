@@ -226,6 +226,7 @@
     background: color-mix(in srgb, var(--card) 92%, transparent);
     cursor: pointer;
     box-shadow: 0 6px 18px rgba(42, 33, 27, 0.06);
+    color: var(--gold-dark);
   }
 
   .overlay {

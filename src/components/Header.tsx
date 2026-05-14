@@ -8,6 +8,16 @@ import styles from './Header.module.css'
 
 const DRAWER_ID = 'site-mobile-nav'
 
+/** Scroll to an anchor element while accounting for the sticky header height. */
+function scrollToAnchor(href: string) {
+  const el = document.querySelector<HTMLElement>(href)
+  if (!el) return
+  const hStr = getComputedStyle(document.documentElement).getPropertyValue('--header-h').trim()
+  const headerH = parseInt(hStr) || 76
+  const top = el.getBoundingClientRect().top + window.scrollY - headerH - 12
+  window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' })
+}
+
 export function Header() {
   const { lang, setLang } = useLang()
   const { header, links } = useContent()
@@ -19,15 +29,19 @@ export function Header() {
   const close = useCallback(() => setOpen(false), [])
 
   const handleAnchor = useCallback((href: string) => (e: React.MouseEvent) => {
+    e.preventDefault()
+    const wasOpen = open
     close()
     if (isSubpage) {
-      e.preventDefault()
       navigate('/')
-      setTimeout(() => {
-        document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' })
-      }, 80)
+      // Wait for page render before scrolling
+      setTimeout(() => scrollToAnchor(href), 120)
+    } else {
+      // If drawer was open wait for its close animation (300ms) before scrolling,
+      // otherwise scroll immediately
+      setTimeout(() => scrollToAnchor(href), wasOpen ? 340 : 0)
     }
-  }, [isSubpage, navigate, close])
+  }, [isSubpage, navigate, close, open])
   const menuBtnRef = useRef<HTMLButtonElement>(null)
   const prevOpen = useRef(false)
 
@@ -55,8 +69,11 @@ export function Header() {
     prevOpen.current = open
   }, [open])
 
-  const onNavigate = () => {
+  const onNavigate = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+    const href = e.currentTarget.getAttribute('href') ?? ''
     close()
+    setTimeout(() => scrollToAnchor(href), 340)
   }
 
   const handleLogo = (e: React.MouseEvent) => {

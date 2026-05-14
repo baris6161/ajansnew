@@ -141,6 +141,11 @@ p:last-child {
   margin-bottom: 0;
 }
 
+/* ── Anchor scroll offset — leaves room for sticky header ─────── */
+[id] {
+  scroll-margin-top: calc(var(--header-h) + 12px);
+}
+
 .container {
   width: var(--container);
   margin-inline: auto;

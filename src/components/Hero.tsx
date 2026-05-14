@@ -7,6 +7,8 @@ import styles from './Hero.module.css'
 function splitWords(text: string, startDelay: number, inc: number) {
   const words = text.trim().split(' ')
   return words.map((word, i) => (
+    // Space is a separate text node OUTSIDE the span so inline-block
+    // doesn't collapse it as trailing whitespace
     <React.Fragment key={i}>
       <span
         className={styles.wordReveal}
