@@ -431,7 +431,7 @@ const tr = {
     eyebrow: 'Tüm Almanya\'da Hizmet Veriyoruz',
     h1Before: 'Almanya Genelinde Fuar ve Etkinlikler İçin',
     h1Highlight: 'Profesyonel Personel Desteği',
-    sub: 'Fuarlar, şirket etkinlikleri ve özel organizasyonlar için çok dilli hostes, catering ve stand destek hizmetleri sunuyoruz. Deneyimli ekibimiz, planlı organizasyon süreci ve profesyonel temsil anlayışıyla markanızı en iyi şekilde destekler.',
+    sub: 'Fuarlar ve şirket etkinlikleri için çok dilli hostes, catering ve stand destek hizmetleri sunuyoruz. Deneyimli ekibimiz, markanızı profesyonel şekilde temsil eder.',
     ctaPrimary: 'Hemen Teklif Alın',
   },
 
