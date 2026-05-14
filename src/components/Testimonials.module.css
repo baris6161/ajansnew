@@ -27,16 +27,6 @@
 /* ── Slider: clips the overflowing track ─────────────────────── */
 .slider {
   overflow: hidden;
-  /*
-   * overflow:hidden clips at the PADDING-BOX boundary.
-   * Adding padding-block gives vertical room for box-shadows, so they
-   * are not clipped. margin-block cancels the visual space it would add.
-   */
-  padding-block: 28px;
-  margin-block:  -28px;
-  /* Same trick horizontally — gives shadow room on the left/right edges */
-  padding-inline: 2px;
-  margin-inline:  -2px;
 }
 
 /* ── Track: wider than slider, moves via translateX ──────────── */
@@ -76,11 +66,10 @@
   border-radius: var(--radius-lg);
   border: none;
   padding: clamp(1.75rem, 3.5vw, 2.5rem) clamp(1.5rem, 3vw, 2.25rem);
-  /* Only downward shadows — prevents adjacent cards from merging
-     their shadows into a visible gray blob behind the group. */
-  box-shadow:
-    0 2px  8px rgba(42, 33, 27, 0.06),
-    0 10px 36px rgba(42, 33, 27, 0.10);
+  /* No shadow — shadow always bleeds and creates a visible gray area.
+     A subtle warm border defines the card cleanly against the background. */
+  box-shadow: none;
+  border: 1px solid rgba(42, 33, 27, 0.09);
   display: flex;
   flex-direction: column;
   gap: 1rem;
