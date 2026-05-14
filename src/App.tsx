@@ -17,6 +17,7 @@ import { TrustBar } from './components/TrustBar'
 import { WhyUs } from './components/WhyUs'
 import { ImpressumPage } from './pages/ImpressumPage'
 import { DatenschutzPage } from './pages/DatenschutzPage'
+import { NfcPage } from './pages/NfcPage'
 import { NotFoundPage } from './pages/NotFoundPage'
 
 function HomePage() {
@@ -69,6 +70,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/impressum" element={<ImpressumPage />} />
         <Route path="/datenschutz" element={<DatenschutzPage />} />
+        <Route path="/nfc" element={<NfcPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </LangProvider>
