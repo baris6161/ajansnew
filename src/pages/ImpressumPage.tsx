@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
+import { SeoHead } from '../components/SeoHead'
 import styles from './LegalPage.module.css'
 
 export function ImpressumPage() {
@@ -8,6 +9,10 @@ export function ImpressumPage() {
 
   return (
     <div className={styles.root}>
+      <SeoHead page="impressum" />
+      <a className="skip" href="#main-content">
+        Zum Inhalt springen
+      </a>
       <Header />
       <main className={styles.main} id="main-content">
         <p className={styles.eyebrow}>Rechtliches</p>
@@ -19,6 +24,7 @@ export function ImpressumPage() {
           <div className={styles.section}>
             <h2>Anbieter</h2>
             <address>
+              {/* TODO: Platzhalteradresse durch die rechtmäßige Geschäftsanschrift ersetzen. */}
               <p>
                 Ajans Köln Fair Organisation<br />
                 Inhaberin: Funda Ekiz<br />

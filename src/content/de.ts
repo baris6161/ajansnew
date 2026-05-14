@@ -21,7 +21,7 @@ export const trust = [
 ] as const
 
 export const partners = {
-  headline: 'Vertrauen ausgewählter Marken & Partner',
+  headline: 'Vertrauen ausgewählter Marken und Partner',
 } as const
 
 export const about = {
@@ -30,9 +30,9 @@ export const about = {
   body: 'Ajans Köln steht für Qualität, Verlässlichkeit und repräsentativen Service. Wir unterstützen Unternehmen, Agenturen und Veranstalter mit erfahrenem Personal, klaren Abläufen und einem hohen Qualitätsanspruch.',
   bullets: [
     'Erfahrenes, mehrsprachiges Personal',
-    'Strukturierte Planung & reibungslose Abläufe',
-    'Individuelle Lösungen für jeden Anlass',
-    'Starke Präsenz auf Messen & Events',
+    'Strukturierte Planung und reibungslose Abläufe',
+    'Klare Pakete für Empfang, Service und Messestand',
+    'Starke Präsenz auf Messen und Events',
   ],
   signature: 'Funda Ekiz',
   /** Karte „Über uns“ – Städte als Punkte in AboutSection.tsx positioniert */
@@ -43,7 +43,7 @@ export const about = {
 } as const
 
 export const services = {
-  headline: 'Maßgeschneiderte Services für Ihren Erfolg.',
+  headline: 'Hostessen, Catering und Standbetreuung für Messen und Events',
   items: [
     {
       title: 'Hostess-Service',
@@ -51,13 +51,13 @@ export const services = {
       key: 'hostess' as const,
     },
     {
-      title: 'Catering & Bewirtung',
-      text: 'Hochwertiges Catering, stilvolle Bewirtung und perfekte Servicequalität für jeden Anlass.',
+      title: 'Catering und Bewirtung',
+      text: 'Hochwertiges Catering, stilvolle Bewirtung und klare Serviceabläufe für jeden Anlass.',
       key: 'catering' as const,
     },
     {
       title: 'Stand-Management',
-      text: 'Komplette Organisation und Betreuung Ihres Messestands – von Aufbau bis Koordination vor Ort.',
+      text: 'Komplette Organisation und Betreuung Ihres Messestands, von Aufbau bis Koordination vor Ort.',
       key: 'stand' as const,
     },
   ],
@@ -100,7 +100,7 @@ export const testimonials = {
     },
     {
       quote:
-        'Sehr kurzfristige Unterstützung vor Ort – absolut verlässlich und professionell. Klare Empfehlung.',
+        'Sehr kurzfristige Unterstützung vor Ort, absolut verlässlich und professionell. Klare Empfehlung.',
       role: 'Geschäftsführer Industrieunternehmen',
     },
   ],
@@ -108,7 +108,7 @@ export const testimonials = {
 
 export const cta = {
   headline: 'Bereit für ein erfolgreiches Event?',
-  sub: 'Lassen Sie uns gemeinsam Ihr Projekt besprechen.',
+  sub: 'Schreiben Sie uns Datum, Ort und Aufgaben, wir melden uns mit einer Rückmeldung.',
   whatsapp: 'WhatsApp',
   phone: 'Telefon',
   send: 'Anfrage senden',
@@ -116,7 +116,7 @@ export const cta = {
 
 export const footer = {
   blurb:
-    'Professionelle Hostess- und Catering-Services für Messen, Events und Roadshows – mit Herz, Erfahrung und Präzision.',
+    'Hostessen, Catering und Standbetreuung für Messen, Roadshows und Firmenevents vom Erstkontakt bis zur Abwicklung vor Ort.',
   contactTitle: 'Kontakt',
   areasTitle: 'Einsatzgebiete',
   qualityTitle: 'Qualitätsversprechen',

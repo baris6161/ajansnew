@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
+import { SeoHead } from '../components/SeoHead'
 import styles from './LegalPage.module.css'
 
 export function DatenschutzPage() {
@@ -8,6 +9,10 @@ export function DatenschutzPage() {
 
   return (
     <div className={styles.root}>
+      <SeoHead page="datenschutz" />
+      <a className="skip" href="#main-content">
+        Zum Inhalt springen
+      </a>
       <Header />
       <main className={styles.main} id="main-content">
         <p className={styles.eyebrow}>Rechtliches</p>

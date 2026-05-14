@@ -63,6 +63,10 @@
     0 4px 12px color-mix(in srgb, var(--gold-soft) 35%, transparent);
 }
 
+.card h3 {
+  margin: 0;
+}
+
 .label {
   margin: 0;
   font-family: var(--font-serif);

@@ -75,6 +75,17 @@
   margin-bottom: 0;
 }
 
+.body a {
+  color: var(--gold-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.body a:hover {
+  color: var(--espresso);
+}
+
 .section a {
   color: var(--gold-dark);
   text-decoration: underline;
