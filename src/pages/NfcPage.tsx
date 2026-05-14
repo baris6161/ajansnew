@@ -1,7 +1,11 @@
-import { Building2, Download, Mail, Phone } from 'lucide-react'
+import { useState } from 'react'
+import { Building2, Download, Mail, MessageSquarePlus, Phone } from 'lucide-react'
+import { ReviewModal } from './ReviewModal'
 import styles from './NfcPage.module.css'
 
 export function NfcPage() {
+  const [showReview, setShowReview] = useState(false)
+
   return (
     <main className={styles.page}>
       <div className={styles.wrap}>
@@ -33,7 +37,7 @@ export function NfcPage() {
           </div>
         </section>
 
-        {/* Standard <a download> — works with the Vercel Function at /api/nfc/vcf */}
+        {/* Primary CTA — save contact */}
         <a
           href="/api/nfc/vcf"
           download="ajans-koeln.vcf"
@@ -43,7 +47,21 @@ export function NfcPage() {
           Kişiyi kaydet
         </a>
 
+        {/* Secondary CTA — write a review */}
+        <button
+          type="button"
+          className={styles.btnSecondary}
+          onClick={() => setShowReview(true)}
+        >
+          <MessageSquarePlus size={16} aria-hidden />
+          Yorum Yaz
+        </button>
+
       </div>
+
+      {showReview && (
+        <ReviewModal onClose={() => setShowReview(false)} />
+      )}
     </main>
   )
 }

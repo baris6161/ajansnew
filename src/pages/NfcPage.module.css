@@ -104,3 +104,34 @@
   transform: scale(0.99);
   opacity: 0.9;
 }
+
+/* ── Secondary button (outlined) ─────────────────────────────── */
+.btnSecondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  background: transparent;
+  color: #4a2a1f;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  border: 1.5px solid #4a2a1f;
+  cursor: pointer;
+  transition: background 0.15s ease, opacity 0.15s ease;
+  box-sizing: border-box;
+}
+
+.btnSecondary:hover {
+  background: rgba(74, 42, 31, 0.06);
+}
+
+.btnSecondary:active {
+  transform: scale(0.99);
+  background: rgba(74, 42, 31, 0.1);
+}

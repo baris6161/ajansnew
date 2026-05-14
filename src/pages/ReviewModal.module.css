@@ -1,0 +1,265 @@
+/* ── Backdrop ─────────────────────────────────────────────────── */
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.48);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  animation: fadeIn 0.18s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ── Dialog card ─────────────────────────────────────────────── */
+.dialog {
+  background: #ffffff;
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 420px;
+  max-height: 90svh;
+  overflow-y: auto;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.18);
+  animation: slideUp 0.22s cubic-bezier(0.22, 1, 0.36, 1);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Header row ──────────────────────────────────────────────── */
+.dialogHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.35rem;
+}
+
+.dialogTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #111111;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.closeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #f0f0f0;
+  color: #444;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.15s ease;
+}
+
+.closeBtn:hover {
+  background: #e4e4e4;
+}
+
+.closeBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ── Hint text ───────────────────────────────────────────────── */
+.hint {
+  font-size: 0.875rem;
+  color: #666666;
+  margin: 0 0 1.25rem;
+  line-height: 1.5;
+}
+
+/* ── Form fields ─────────────────────────────────────────────── */
+.field {
+  margin-bottom: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #333333;
+}
+
+.optional {
+  font-weight: 400;
+  color: #888888;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.65rem 0.85rem;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 0.625rem;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #111111;
+  background: #fafafa;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.15s ease;
+  resize: vertical;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: #aaaaaa;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #4a2a1f;
+  background: #fff;
+}
+
+.input:disabled,
+.textarea:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.textarea {
+  min-height: 100px;
+}
+
+/* ── Star rating ─────────────────────────────────────────────── */
+.stars {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.star {
+  font-size: 1.85rem;
+  line-height: 1;
+  background: none;
+  border: none;
+  padding: 0.15rem 0.1rem;
+  cursor: pointer;
+  color: #cccccc;
+  transition: color 0.12s ease, transform 0.1s ease;
+  /* Large tap target on mobile */
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.star:hover,
+.star:focus-visible {
+  outline: none;
+  transform: scale(1.15);
+}
+
+.starOn {
+  color: #c8860a;
+}
+
+.star:disabled {
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ── Validation errors ───────────────────────────────────────── */
+.error {
+  font-size: 0.8rem;
+  color: #c0392b;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.sendError {
+  font-size: 0.875rem;
+  color: #c0392b;
+  background: #fef2f2;
+  border-radius: 0.5rem;
+  padding: 0.65rem 0.85rem;
+  margin: 0 0 0.85rem;
+  line-height: 1.5;
+}
+
+/* ── Submit button ───────────────────────────────────────────── */
+.submitBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  background: #4a2a1f;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: opacity 0.15s ease;
+  box-sizing: border-box;
+}
+
+.submitBtn:hover:not(:disabled) {
+  opacity: 0.92;
+}
+
+.submitBtn:active:not(:disabled) {
+  transform: scale(0.99);
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ── Success message ─────────────────────────────────────────── */
+.successMsg {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2e7d32;
+  background: #f1f8f1;
+  border-radius: 0.75rem;
+  line-height: 1.6;
+}
+
+/* ── Honeypot (visually hidden) ──────────────────────────────── */
+.honeypot {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ── Reduced motion ──────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .backdrop,
+  .dialog {
+    animation: none;
+  }
+}
