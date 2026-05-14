@@ -22,7 +22,7 @@ function easeOutCubic(t: number) {
   return 1 - Math.pow(1 - t, 3)
 }
 
-const DURATION = 1400 // ms
+const DURATION = 2600 // ms
 
 function AnimatedCell({ title, icon: Icon }: { title: string; icon: typeof Shield }) {
   const parsed = parseStat(title)

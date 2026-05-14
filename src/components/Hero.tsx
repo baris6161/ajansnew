@@ -21,7 +21,7 @@ function splitWords(text: string, startDelay: number, inc: number) {
 
 export function Hero() {
   const { hero, links } = useContent()
-  const inc = 0.1
+  const inc = 0.13
   const beforeWordCount = hero.h1Before.trim().split(' ').length
   return (
     <section className={styles.section} id="top" aria-labelledby="hero-heading">
