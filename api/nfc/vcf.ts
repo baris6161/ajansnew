@@ -32,10 +32,13 @@ export default function handler(_req: VercelRequest, res: VercelResponse) {
 
   const vcf = lines.join('\r\n')
 
-  // text/vcard — recognised by iOS Contacts and Android Contacts
+  // Content-Type: text/vcard — recognised by iOS Contacts and Android Contacts.
+  // Content-Disposition: attachment — REQUIRED for iOS Safari.
+  //   Without it, Safari renders the raw vCard text in the browser.
+  //   With attachment + .vcf filename, iOS intercepts the download and shows
+  //   the "Add to Contacts" / "New Contact" sheet automatically.
   res.setHeader('Content-Type', 'text/vcard; charset=utf-8')
-  // Omitting Content-Disposition entirely is the most reliable way to trigger
-  // the "Add to Contacts" sheet on iOS Safari and Android Chrome/Samsung Browser.
+  res.setHeader('Content-Disposition', 'attachment; filename="contact.vcf"')
   res.setHeader('Cache-Control', 'no-store')
   res.status(200).send(vcf)
 }
