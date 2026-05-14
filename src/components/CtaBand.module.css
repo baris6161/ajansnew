@@ -75,9 +75,10 @@
   flex-shrink: 0;
 }
 
-/* CSS-only stretchy arrow line */
+/* CSS-only short arrow line */
 .cueArrow {
-  flex: 1;
+  flex: none;
+  width: 56px;
   position: relative;
   height: 1px;
   background: linear-gradient(
@@ -87,7 +88,6 @@
   );
   border-radius: 1px;
   align-self: center;
-  min-width: 24px;
   opacity: 0.85;
 }
 
