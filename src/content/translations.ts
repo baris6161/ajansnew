@@ -179,7 +179,7 @@ const de = {
       },
       {
         q: 'In welchen Städten seid ihr verfügbar?',
-        a: 'Wir sind hauptsächlich in Köln und NRW aktiv, unterstützen aber auf Anfrage auch Events in anderen deutschen Städten.',
+        a: 'Wir sind deutschlandweit tätig – von Köln über Frankfurt und Hamburg bis Berlin und München. Kein Einsatzort ist zu weit.',
       },
       {
         q: 'Gibt es mehrsprachiges Personal?',
@@ -381,7 +381,7 @@ const en = {
       },
       {
         q: 'Which cities do you cover?',
-        a: 'We mainly operate in Cologne and the broader NRW region, but we are happy to support events elsewhere in Germany.',
+        a: 'We operate across Germany — from Cologne and Frankfurt to Hamburg, Berlin and Munich. No location is too far.',
       },
       {
         q: 'Do you have multilingual staff?',
@@ -583,7 +583,7 @@ const tr = {
       },
       {
         q: 'Hangi şehirlerde hizmet veriyorsunuz?',
-        a: 'Ağırlıklı olarak Köln ve Kuzey Ren-Vestfalya bölgesinde çalışıyoruz; talep üzerine diğer şehirlerdeki etkinliklere de destek sağlayabiliriz.',
+        a: 'Tüm Almanya genelinde hizmet veriyoruz – Köln ve Frankfurt\'tan Hamburg, Berlin ve Münih\'e kadar. Hiçbir lokasyon çok uzak değil.',
       },
       {
         q: 'Çok dilli personel var mı?',
