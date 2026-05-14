@@ -8,10 +8,10 @@ interface LangCtx {
   setLang: (l: Lang) => void
 }
 
-const LangContext = createContext<LangCtx>({ lang: 'de', setLang: () => {} })
+const LangContext = createContext<LangCtx>({ lang: 'tr', setLang: () => {} })
 
 export function LangProvider({ children }: { children: ReactNode }) {
-  const [lang, setLang] = useState<Lang>('de')
+  const [lang, setLang] = useState<Lang>('tr')
   return <LangContext.Provider value={{ lang, setLang }}>{children}</LangContext.Provider>
 }
 

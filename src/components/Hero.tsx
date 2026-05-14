@@ -1,6 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 import React from 'react'
-import { hero, links } from '../content/de'
+import { useContent } from '../hooks/useContent'
 import { imageAlts, images } from '../config/images'
 import styles from './Hero.module.css'
 
@@ -20,7 +20,8 @@ function splitWords(text: string, startDelay: number, inc: number) {
 }
 
 export function Hero() {
-  const inc = 0.065
+  const { hero, links } = useContent()
+  const inc = 0.1
   const beforeWordCount = hero.h1Before.trim().split(' ').length
   return (
     <section className={styles.section} id="top" aria-labelledby="hero-heading">
@@ -52,6 +53,7 @@ export function Hero() {
           alt={imageAlts.hero}
           width={1920}
           height={1080}
+          sizes="100vw"
           decoding="async"
           fetchPriority="high"
         />

@@ -1,8 +1,9 @@
 import { useEffect, useRef } from 'react'
-import { process } from '../content/de'
+import { useContent } from '../hooks/useContent'
 import styles from './Process.module.css'
 
 export function Process() {
+  const { process } = useContent()
   const trackRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {

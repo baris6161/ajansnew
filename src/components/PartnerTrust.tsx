@@ -1,4 +1,4 @@
-import { partners } from '../content/de'
+import { useContent } from '../hooks/useContent'
 import { images } from '../config/images'
 import styles from './PartnerTrust.module.css'
 
@@ -10,6 +10,7 @@ const LOGOS = [
 ] as const
 
 export function PartnerTrust() {
+  const { partners } = useContent()
   return (
     <section className={styles.section} aria-labelledby="partner-heading">
       <div className="container">
@@ -22,7 +23,9 @@ export function PartnerTrust() {
               <img
                 src={logo.src}
                 alt={logo.alt}
+                width={200}
                 height={56}
+                sizes="(max-width: 600px) 45vw, 180px"
                 loading="lazy"
                 decoding="async"
                 className={styles.logoImg}

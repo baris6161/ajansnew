@@ -1,5 +1,5 @@
 import { Globe2, Languages, Shield, Sparkles } from 'lucide-react'
-import { trust } from '../content/de'
+import { useContent } from '../hooks/useContent'
 import styles from './TrustBar.module.css'
 
 const iconMap = {
@@ -10,6 +10,7 @@ const iconMap = {
 } as const
 
 export function TrustBar() {
+  const { trust } = useContent()
   return (
     <section className={styles.wrap} aria-label="Kennzahlen und Vertrauen">
       <div className={styles.card}>

@@ -1,5 +1,5 @@
 import { Check } from 'lucide-react'
-import { about } from '../content/de'
+import { useContent } from '../hooks/useContent'
 import { imageAlts, images } from '../config/images'
 import styles from './AboutSection.module.css'
 
@@ -21,6 +21,7 @@ const MAP_MARKERS = [
 ] as const
 
 function GermanyMap() {
+  const { about } = useContent()
   return (
     <figure className={styles.mapFigure}>
       <p className={styles.mapKicker}>{about.mapKicker}</p>
@@ -63,6 +64,7 @@ function GermanyMap() {
 }
 
 export function AboutSection() {
+  const { about } = useContent()
   return (
     <section className={styles.section} id="ueber-uns" aria-labelledby="about-heading">
       <div className={styles.inner}>
@@ -75,6 +77,7 @@ export function AboutSection() {
                   alt={imageAlts.aboutPortrait}
                   width={960}
                   height={1280}
+                  sizes="(max-width: 900px) 100vw, min(520px, 45vw)"
                   loading="lazy"
                   decoding="async"
                 />
@@ -87,9 +90,13 @@ export function AboutSection() {
         <div className={styles.copy}>
           <p className={styles.eyebrow}>{about.eyebrow}</p>
           <h2 className={styles.title} id="about-heading">
-            Ihr Partner für erfolgreiche
-            <br />
-            Veranstaltungen in ganz Deutschland.
+            {about.headline}
+            {about.headlineLine2 && (
+              <>
+                <br />
+                {about.headlineLine2}
+              </>
+            )}
           </h2>
           <p className={styles.lead}>{about.body}</p>
           <ul className={styles.list}>

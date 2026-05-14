@@ -1,10 +1,11 @@
 import { Briefcase, Globe2, Headphones, Languages } from 'lucide-react'
-import { whyUs } from '../content/de'
+import { useContent } from '../hooks/useContent'
 import styles from './WhyUs.module.css'
 
 const icons = [Briefcase, Languages, Globe2, Headphones] as const
 
 export function WhyUs() {
+  const { whyUs } = useContent()
   return (
     <section className={styles.section} aria-labelledby="why-heading">
       <div className={styles.inner}>
@@ -19,7 +20,7 @@ export function WhyUs() {
                 <span className={styles.icon} aria-hidden>
                   <Icon size={26} strokeWidth={1.5} />
                 </span>
-                <p className={styles.label}>{label}</p>
+                <h3 className={styles.label}>{label}</h3>
                 <span className={styles.accent} aria-hidden />
               </div>
             )

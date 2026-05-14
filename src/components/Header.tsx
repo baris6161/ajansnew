@@ -3,20 +3,14 @@ import { Menu, X } from 'lucide-react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { useLang } from '../context/lang'
 import type { Lang } from '../context/lang'
-import { links } from '../content/de'
+import { useContent } from '../hooks/useContent'
 import styles from './Header.module.css'
-
-const navItems = [
-  { href: '#ueber-uns', label: 'Über uns' },
-  { href: '#leistungen', label: 'Leistungen' },
-  { href: '#referenzen', label: 'Referenzen' },
-  { href: '#kontakt', label: 'Kontakt' },
-] as const
 
 const DRAWER_ID = 'site-mobile-nav'
 
 export function Header() {
   const { lang, setLang } = useLang()
+  const { header, links } = useContent()
   const [open, setOpen] = useState(false)
   const location = useLocation()
   const navigate = useNavigate()
@@ -86,7 +80,7 @@ export function Header() {
 
         <nav className={styles.navCenter} aria-label="Hauptnavigation">
           <ul className={styles.navList}>
-            {navItems.map((item) => (
+            {header.nav.map((item) => (
               <li key={item.href} className={styles.navItem}>
                 <a className={styles.navLink} href={item.href} onClick={handleAnchor(item.href)}>
                   {item.label}
@@ -97,7 +91,7 @@ export function Header() {
         </nav>
 
         <div className={styles.right}>
-          <div className={styles.lang} aria-label="Sprache wählen">
+          <div className={styles.lang} aria-label={header.langLabel}>
             {(['tr', 'de', 'en'] as Lang[]).map((l, i, arr) => (
               <>
                 <button
@@ -116,7 +110,7 @@ export function Header() {
             ))}
           </div>
           <a className={styles.cta} href={links.kontaktAnker}>
-            Jetzt anfragen
+            {header.cta}
           </a>
         </div>
 
@@ -146,7 +140,7 @@ export function Header() {
       >
         <nav className={styles.drawerInner} aria-label="Mobile Navigation">
           <ul className={styles.drawerNav}>
-            {navItems.map((item) => (
+            {header.nav.map((item) => (
               <li key={item.href} className={styles.drawerItem}>
                 <a className={styles.drawerLink} href={item.href} onClick={handleAnchor(item.href)}>
                   {item.label}
@@ -155,7 +149,7 @@ export function Header() {
             ))}
           </ul>
           <div className={styles.drawerLang}>
-            <span className={styles.drawerLangLabel}>Sprache</span>
+            <span className={styles.drawerLangLabel}>{header.langLabel}</span>
             <div className={styles.lang}>
               {(['tr', 'de', 'en'] as Lang[]).map((l) => (
                 <button
@@ -171,7 +165,7 @@ export function Header() {
             </div>
           </div>
           <a className={`${styles.cta} ${styles.drawerCta}`} href={links.kontaktAnker} onClick={onNavigate}>
-            Jetzt anfragen
+            {header.cta}
           </a>
         </nav>
       </div>

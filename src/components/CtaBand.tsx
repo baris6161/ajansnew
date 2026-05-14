@@ -1,8 +1,9 @@
 import { ArrowRight, Mail, MessageCircle, Phone } from 'lucide-react'
-import { cta, footer, links } from '../content/de'
+import { useContent } from '../hooks/useContent'
 import styles from './CtaBand.module.css'
 
 export function CtaBand() {
+  const { cta, footer, links } = useContent()
   return (
     <section className={styles.section} id="kontakt" aria-labelledby="cta-heading">
       <div className={styles.inner}>
@@ -10,13 +11,24 @@ export function CtaBand() {
           <div className={styles.copy}>
             <h2 id="cta-heading">{cta.headline}</h2>
             <p>{cta.sub}</p>
-            <a className={styles.btn} href={footer.emailHref}>
-              {cta.send}
-              <ArrowRight size={18} style={{ marginLeft: 8 }} aria-hidden strokeWidth={2} />
-            </a>
+
+            {/* Desktop/Tablet: visueller Richtungshinweis statt Button */}
+            <div className={styles.contactCue}>
+              <span className={styles.contactCueText}>{cta.contactCue}</span>
+              <svg className={styles.cueArrow} viewBox="0 0 52 16" fill="none" aria-hidden>
+                <path
+                  d="M0 8 H44 M36 2 L44 8 L36 14"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </div>
           </div>
+
           <div className={styles.channels}>
-            <a className={styles.channel} href={links.whatsapp} rel="noopener noreferrer">
+            <a className={styles.channel} href={links.whatsapp} target="_blank" rel="noopener noreferrer">
               <span className={styles.channelLeft}>
                 <span className={styles.icon} aria-hidden>
                   <MessageCircle size={20} strokeWidth={1.75} />
@@ -39,7 +51,7 @@ export function CtaBand() {
                 <span className={styles.icon} aria-hidden>
                   <Mail size={20} strokeWidth={1.75} />
                 </span>
-                E-Mail
+                {cta.email}
               </span>
               <ArrowRight size={18} aria-hidden strokeWidth={2} />
             </a>

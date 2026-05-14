@@ -326,7 +326,7 @@
 @keyframes wordUp {
   from {
     opacity: 0;
-    transform: translateY(0.4em);
+    transform: translateY(0.55em);
   }
   to {
     opacity: 1;
@@ -337,7 +337,7 @@
 .wordReveal {
   display: inline;
   opacity: 0;
-  animation: wordUp 0.58s cubic-bezier(0.22, 1, 0.36, 1) var(--word-delay, 0s) both;
+  animation: wordUp 0.85s cubic-bezier(0.22, 1, 0.36, 1) var(--word-delay, 0s) both;
 }
 
 @media (prefers-reduced-motion: reduce) {

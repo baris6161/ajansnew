@@ -1,5 +1,5 @@
 import { imageAlts, images } from '../config/images'
-import { services } from '../content/de'
+import { useContent } from '../hooks/useContent'
 import styles from './Services.module.css'
 
 const imgByKey = {
@@ -15,6 +15,7 @@ const altByKey = {
 } as const
 
 export function Services() {
+  const { services } = useContent()
   return (
     <section className={styles.section} id="leistungen" aria-labelledby="services-heading">
       <div className={styles.intro}>
@@ -29,6 +30,7 @@ export function Services() {
                 alt={altByKey[item.key]}
                 width={1200}
                 height={825}
+                sizes="(max-width: 900px) 100vw, min(1200px, 90vw)"
                 loading="lazy"
                 decoding="async"
               />
