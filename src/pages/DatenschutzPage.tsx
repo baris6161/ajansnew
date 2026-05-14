@@ -35,7 +35,7 @@ export function DatenschutzPage() {
                 50667 Köln<br />
                 Deutschland<br />
                 E-Mail: <a href="mailto:kontakt@ajans-koeln.de">kontakt@ajans-koeln.de</a><br />
-                Telefon: <a href="tel:+492210000000">+49 (0) 221 000 00 00</a>
+                Telefon: <a href="tel:+491727532501">+49 172 7532501</a>
               </p>
             </address>
           </div>

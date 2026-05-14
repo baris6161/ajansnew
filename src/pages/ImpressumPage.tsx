@@ -38,7 +38,7 @@ export function ImpressumPage() {
           <div className={styles.section}>
             <h2>Kontakt</h2>
             <p>
-              Telefon: <a href="tel:+492210000000">+49 (0) 221 000 00 00</a><br />
+              Telefon: <a href="tel:+491727532501">+49 172 7532501</a><br />
               E-Mail: <a href="mailto:kontakt@ajans-koeln.de">kontakt@ajans-koeln.de</a>
             </p>
           </div>

@@ -160,8 +160,8 @@ const de = {
       'Verbindliche Abläufe vor Ort',
     ],
     addressLines: ['Ajans Köln Fair Organisation', 'Musterstraße 1', '50667 Köln'],
-    phoneDisplay: '+49 (0) 221 000 00 00',
-    phoneHref: 'tel:+492210000000',
+    phoneDisplay: '+49 172 7532501',
+    phoneHref: 'tel:+491727532501',
     emailDisplay: 'kontakt@ajans-koeln.de',
     emailHref: 'mailto:kontakt@ajans-koeln.de',
     cities: 'Deutschlandweit · Messen · Roadshows · Firmenevents',
@@ -197,7 +197,7 @@ const de = {
   },
 
   links: {
-    whatsapp: 'https://wa.me/4922100000000',
+    whatsapp: 'https://wa.me/491727532501',
     kontaktAnker: '#kontakt',
   },
 } as const
@@ -362,8 +362,8 @@ const en = {
       'Reliable on-site processes',
     ],
     addressLines: ['Ajans Köln Fair Organisation', 'Musterstraße 1', '50667 Köln'],
-    phoneDisplay: '+49 (0) 221 000 00 00',
-    phoneHref: 'tel:+492210000000',
+    phoneDisplay: '+49 172 7532501',
+    phoneHref: 'tel:+491727532501',
     emailDisplay: 'kontakt@ajans-koeln.de',
     emailHref: 'mailto:kontakt@ajans-koeln.de',
     cities: 'Nationwide · Trade Fairs · Roadshows · Corporate Events',
@@ -399,7 +399,7 @@ const en = {
   },
 
   links: {
-    whatsapp: 'https://wa.me/4922100000000',
+    whatsapp: 'https://wa.me/491727532501',
     kontaktAnker: '#kontakt',
   },
 } as const
@@ -564,8 +564,8 @@ const tr = {
       'Yerinde güvenilir süreçler',
     ],
     addressLines: ['Ajans Köln Fair Organisation', 'Musterstraße 1', '50667 Köln'],
-    phoneDisplay: '+49 (0) 221 000 00 00',
-    phoneHref: 'tel:+492210000000',
+    phoneDisplay: '+49 172 7532501',
+    phoneHref: 'tel:+491727532501',
     emailDisplay: 'kontakt@ajans-koeln.de',
     emailHref: 'mailto:kontakt@ajans-koeln.de',
     cities: 'Almanya Geneli · Fuarlar · Roadshowlar · Şirket Etkinlikleri',
@@ -601,7 +601,7 @@ const tr = {
   },
 
   links: {
-    whatsapp: 'https://wa.me/4922100000000',
+    whatsapp: 'https://wa.me/491727532501',
     kontaktAnker: '#kontakt',
   },
 } as const
