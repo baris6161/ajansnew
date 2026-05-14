@@ -15,7 +15,8 @@ const de = {
     nav: [
       { href: '#ueber-uns',  label: 'Über uns' },
       { href: '#leistungen', label: 'Leistungen' },
-      { href: '#referenzen', label: 'Referenzen' },
+      { href: '#referenzen', label: 'Bewertungen' },
+      { href: '#faq',        label: 'FAQ' },
       { href: '#kontakt',    label: 'Kontakt' },
     ],
   },
@@ -218,6 +219,7 @@ const en = {
       { href: '#ueber-uns',  label: 'About' },
       { href: '#leistungen', label: 'Services' },
       { href: '#referenzen', label: 'Reviews' },
+      { href: '#faq',        label: 'FAQ' },
       { href: '#kontakt',    label: 'Contact' },
     ],
   },
@@ -419,17 +421,18 @@ const tr = {
     nav: [
       { href: '#ueber-uns',  label: 'Hakkımızda' },
       { href: '#leistungen', label: 'Hizmetler' },
-      { href: '#referenzen', label: 'Referanslar' },
+      { href: '#referenzen', label: 'Yorumlar' },
+      { href: '#faq',        label: 'SSS' },
       { href: '#kontakt',    label: 'İletişim' },
     ],
   },
 
   hero: {
     eyebrow: 'Tüm Almanya\'da Hizmet Veriyoruz',
-    h1Before: 'Fuar ve Etkinlikler için Profesyonel Hostes ve',
-    h1Highlight: 'Catering Hizmetleri',
-    sub: 'Çok dilli personel, yapılandırılmış planlama ve temsili sunum ile Almanya genelinde fuar, şirket organizasyonları ve özel etkinlikler için profesyonel destek.',
-    ctaPrimary: 'Şimdi Teklif Alın',
+    h1Before: 'Almanya Genelinde Fuar ve Etkinlikler İçin',
+    h1Highlight: 'Profesyonel Personel Desteği',
+    sub: 'Fuarlar, şirket etkinlikleri ve özel organizasyonlar için çok dilli hostes, catering ve stand destek hizmetleri sunuyoruz. Deneyimli ekibimiz, planlı organizasyon süreci ve profesyonel temsil anlayışıyla markanızı en iyi şekilde destekler.',
+    ctaPrimary: 'Hemen Teklif Alın',
   },
 
   trust: [
@@ -440,20 +443,20 @@ const tr = {
   ],
 
   partners: {
-    headline: 'Seçkin Marka ve Ortaklarımızın Güveni',
+    headline: 'Bize Güvenen Markalar ve İş Ortakları',
   },
 
   about: {
     eyebrow: 'Ajans Köln Hakkında',
-    since: '2019\'dan bu yana etkinlik ve fuar hizmeti',
-    headline: 'Başarılı Etkinlikler İçin',
-    headlineLine2: 'Almanya\'da Güvenilir Ortağınız.',
-    body: 'Ajans Köln, kalite, güvenilirlik ve temsili hizmet anlayışıyla öne çıkmaktadır. Deneyimli personel, net süreçler ve yüksek kalite standartlarıyla firmalara, ajanslara ve organizatörlere destek sağlıyoruz.',
+    since: '2019\'dan beri fuar ve etkinlik sektöründe hizmet veriyoruz',
+    headline: 'Almanya Genelinde Başarılı Etkinlikler İçin',
+    headlineLine2: 'Güvenilir Çözüm Ortağınız.',
+    body: 'Ajans Köln; kalite, güvenilirlik ve profesyonel hizmet anlayışıyla öne çıkmaktadır. Deneyimli personel, net süreçler ve yüksek kalite standartlarıyla firmalara, ajanslara ve organizatörlere destek sağlıyoruz.',
     bullets: [
       'Deneyimli, çok dilli personel',
-      'Yapılandırılmış planlama ve sorunsuz süreçler',
-      'Karşılama, servis ve fuar standı için net paketler',
-      'Fuar ve etkinliklerde güçlü temsil',
+      'Planlı ve düzenli organizasyon ile sorunsuz süreçler',
+      'Karşılama, servis ve fuar standı desteği için net hizmet paketleri',
+      'Fuar ve etkinliklerde güçlü kurumsal temsil',
     ],
     signature: 'Funda Ekiz',
     mapTagline: 'Almanya Genelinde Hizmet',
@@ -466,7 +469,7 @@ const tr = {
     items: [
       {
         title: 'Hostes Hizmetleri',
-        text: 'Karşılama, akreditasyon, promosyon ve stand desteği için profesyonel hostes ve hostler.',
+        text: 'Karşılama, akreditasyon, promosyon ve stand desteği için profesyonel hostes ve fuar personeli.',
         key: 'hostess' as const,
       },
       {
@@ -488,7 +491,7 @@ const tr = {
       'Uzun Yıllara Dayanan Fuar Deneyimi',
       'Çok Dilli Ekip',
       'Tüm Almanya\'da Hizmet',
-      'Sabit İletişim Kişisi',
+      'Tek Yetkili İletişim Kişisi',
     ],
   },
 
@@ -497,9 +500,9 @@ const tr = {
     steps: [
       { title: 'Talep',           text: 'Tarih, yer ve personel ihtiyacınızı bize iletin.' },
       { title: 'İhtiyaç Analizi', text: 'Detayları birlikte ele alır, neye ihtiyaç duyulduğunu netleştiririz.' },
-      { title: 'Ekip Kurulumu',   text: 'Uygun personeli seçer ve müsaitliklerini teyit ederiz.' },
+      { title: 'Ekip Oluşturma',  text: 'Uygun personeli seçer ve müsaitliklerini teyit ederiz.' },
       { title: 'Brifing',         text: 'Ekip, gereksinimlerinize göre hazırlanır ve bilgilendirilir.' },
-      { title: 'Sahada',          text: 'Etkinlik günü dakik ve profesyonel hizmet.' },
+      { title: 'Etkinlik Günü',   text: 'Etkinlik günü dakik ve profesyonel hizmet.' },
     ],
   },
 
@@ -518,7 +521,7 @@ const tr = {
         role: 'Etkinlik Yöneticisi, İlaç Sektörü',
       },
       {
-        quote: 'Catering ekibi çok dikkatli çalıştı ve yoğun anlarda bile her şeyi kontrol altında tuttu. Müşterilerimiz hayranlıklarını dile getirdi.',
+        quote: 'Catering ekibi çok dikkatli çalıştı ve yoğun anlarda bile her şeyi kontrol altında tuttu. Misafirlerimiz hizmet kalitesinden çok etkilendi.',
         role: 'Genel Müdür, Otomotiv Tedarikçisi',
       },
       {
@@ -526,15 +529,15 @@ const tr = {
         role: 'Pazarlama Direktörü, Teknoloji Şirketi',
       },
       {
-        quote: 'Hostes ekibi birden fazla dil konuştu ve uluslararası misafirlerimizle doğrudan iletişim kurabildi. Bu gerçekten fark yarattı.',
+        quote: 'Hostes ekibi birden fazla dil konuştu ve uluslararası misafirlerimizle doğrudan iletişim kurabildi. Bu bizim için büyük avantaj sağladı.',
         role: 'Proje Yöneticisi, Fuar Yapım Şirketi',
       },
       {
-        quote: 'Sıkı organize edilmiş, dakik, sürpriz yok. Bir etkinlikte tam da ihtiyaç duyduğumuz şey buydu.',
+        quote: 'Çok iyi organize edilmiş, dakik ve sorunsuz bir hizmet aldık. Bir etkinlikte tam da ihtiyaç duyduğumuz şey buydu.',
         role: 'Etkinlik Direktörü, Sanayi Şirketi',
       },
       {
-        quote: 'Stand yönetimini ekip tamamen kendi inisiyatifiyle üstlendi. Neredeyse hiç müdahale etmemize gerek kalmadı. Böyle olması gerekiyor.',
+        quote: 'Stand yönetimini ekip tamamen kendi inisiyatifiyle üstlendi. Neredeyse hiç müdahale etmemize gerek kalmadı. Profesyonel hizmet tam olarak böyle olmalı.',
         role: 'Pazarlama Müdürü, KOBİ',
       },
       {
