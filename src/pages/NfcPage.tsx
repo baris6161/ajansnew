@@ -77,10 +77,11 @@ export function NfcPage() {
 
         {/*
           ── Primary CTA — save contact ──
-          No download="" attribute → lets iOS/Android open the
-          Contacts "Add contact" sheet directly instead of saving to Files.
+          Static /funda-ekiz.vcf — URL ends in .vcf which iOS Safari
+          uses (alongside Content-Type) to route to the Contacts app.
+          No download="" attribute on the <a> tag.
         */}
-        <a href="/api/nfc/vcf" className={styles.btn}>
+        <a href="/funda-ekiz.vcf" className={styles.btn}>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden>
             <path d="M8 2v8M5 7l3 3 3-3M3 12h10" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/>
           </svg>

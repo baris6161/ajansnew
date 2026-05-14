@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Ekiz;Funda;;;
+FN:Funda Ekiz
+ORG:Ajans Köln
+TITLE:Fuar Organizasyonu
+TEL;TYPE=CELL,VOICE:+491727532501
+EMAIL;TYPE=INTERNET,PREF:ajanskoeln@gmail.com
+URL:https://ajanskoeln.de
+X-SOCIALPROFILE;type=instagram;x-user=ajanskoeln:https://instagram.com/ajanskoeln
+END:VCARD

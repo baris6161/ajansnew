@@ -1,10 +1,19 @@
 {
+  "headers": [
+    {
+      "source": "/(.*)\\.vcf",
+      "headers": [
+        { "key": "Content-Type",        "value": "text/vcard; charset=utf-8" },
+        { "key": "Content-Disposition", "value": "attachment; filename=\"contact.vcf\"" },
+        { "key": "Cache-Control",       "value": "no-store" }
+      ]
+    }
+  ],
   "redirects": [
-    { "source": "/crm/nfc", "destination": "/nfc", "permanent": true },
+    { "source": "/crm/nfc",      "destination": "/nfc", "permanent": true },
     { "source": "/crm/nfc/(.*)", "destination": "/nfc", "permanent": true }
   ],
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "/api/$1" },
-    { "source": "/(.*)",     "destination": "/index.html" }
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }
