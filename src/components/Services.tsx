@@ -2,6 +2,15 @@ import { imageAlts, images } from '../config/images'
 import { useContent } from '../hooks/useContent'
 import styles from './Services.module.css'
 
+function renderAmp(text: string) {
+  if (!text.includes('&')) return text
+  return text.split('&').flatMap((part, i, arr) =>
+    i < arr.length - 1
+      ? [part, <span key={i} className={styles.amp}>&amp;</span>]
+      : [part]
+  )
+}
+
 const imgByKey = {
   hostess: images.serviceHostess,
   catering: images.serviceCatering,
@@ -36,7 +45,7 @@ export function Services() {
               />
             </div>
             <div className={styles.body}>
-              <h3 className={styles.title}>{item.title}</h3>
+              <h3 className={styles.title}>{renderAmp(item.title)}</h3>
               <p className={styles.text}>{item.text}</p>
             </div>
           </article>

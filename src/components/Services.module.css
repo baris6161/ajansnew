@@ -1,6 +1,14 @@
 .section {
   padding: var(--section-y) 0;
   background: linear-gradient(180deg, var(--bg-soft) 0%, var(--surface-warm) 32%, var(--bg) 100%);
+  border-top: 1px solid color-mix(in srgb, var(--gold-soft) 14%, transparent);
+}
+
+/* Ampersand in sans-serif for card titles */
+.amp {
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-weight: 500;
 }
 
 .intro {

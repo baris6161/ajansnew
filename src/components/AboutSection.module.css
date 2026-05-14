@@ -98,7 +98,19 @@
   text-transform: uppercase;
   font-weight: 700;
   color: var(--gold-dark);
-  margin: 0 0 1.25rem;
+  margin: 0 0 0.65rem;
+}
+
+.sinceBadge {
+  display: block;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--gold-dark) 70%, var(--text-muted));
+  margin-bottom: 1.1rem;
+  line-height: 1.4;
 }
 
 .title {

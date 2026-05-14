@@ -1,0 +1,120 @@
+.section {
+  padding: var(--section-y) 0;
+  background: linear-gradient(180deg, var(--surface) 0%, var(--bg-soft) 100%);
+  border-top: 1px solid color-mix(in srgb, var(--gold-soft) 14%, transparent);
+}
+
+.inner {
+  width: var(--container);
+  margin-inline: auto;
+  max-width: 800px;
+}
+
+.head {
+  text-align: center;
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.head h2 {
+  margin: 0;
+}
+
+/* ── List ─────────────────────────────────────────────────────── */
+.list {
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Item ─────────────────────────────────────────────────────── */
+.item {
+  border-bottom: 1px solid color-mix(in srgb, var(--gold-soft) 22%, var(--border));
+}
+
+.item:first-child {
+  border-top: 1px solid color-mix(in srgb, var(--gold-soft) 22%, var(--border));
+}
+
+/* ── Question button ──────────────────────────────────────────── */
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 1.35rem 0;
+  cursor: pointer;
+  text-align: left;
+  font-family: var(--font-serif);
+  font-size: clamp(1rem, 1.3vw, 1.1rem);
+  font-weight: 500;
+  color: var(--text);
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  transition: color 0.2s ease;
+}
+
+.question:hover {
+  color: var(--gold-dark);
+}
+
+.question:active {
+  color: var(--gold-dark);
+}
+
+/* ── Chevron ──────────────────────────────────────────────────── */
+.chevron {
+  flex-shrink: 0;
+  color: color-mix(in srgb, var(--gold-dark) 75%, var(--text-muted));
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+/* ── Answer panel ─────────────────────────────────────────────── */
+.answer {
+  margin: 0;
+  overflow: hidden;
+  max-height: calc(var(--panel-height, 0) * 400px);
+  transition: max-height 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.answerText {
+  font-size: clamp(0.93rem, 1.1vw, 1rem);
+  line-height: 1.72;
+  color: var(--text-muted);
+  margin: 0;
+  padding-bottom: 1.35rem;
+  max-width: 640px;
+}
+
+/* ── Open state accent ────────────────────────────────────────── */
+.itemOpen .question {
+  color: var(--espresso);
+}
+
+/* ── Mobile ───────────────────────────────────────────────────── */
+@media (max-width: 767px) {
+  .question {
+    padding: 1.15rem 0;
+    font-size: 1rem;
+  }
+
+  .answerText {
+    font-size: 0.93rem;
+    padding-bottom: 1.1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .answer {
+    transition: none;
+  }
+
+  .chevron {
+    transition: none;
+  }
+}

@@ -41,6 +41,7 @@ const de = {
 
   about: {
     eyebrow: 'Über Ajans Köln',
+    since: 'Seit 2019 für Events und Messen im Einsatz',
     headline: 'Ihr Partner für erfolgreiche Veranstaltungen',
     headlineLine2: 'in ganz Deutschland.',
     body: 'Ajans Köln steht für Qualität, Verlässlichkeit und repräsentativen Service. Wir unterstützen Unternehmen, Agenturen und Veranstalter mit erfahrenem Personal, klaren Abläufen und einem hohen Qualitätsanspruch.',
@@ -90,16 +91,19 @@ const de = {
   process: {
     headline: 'So läuft die Zusammenarbeit',
     steps: [
-      { title: 'Anfrage',       text: 'Sie senden uns Ihre Anfrage mit den wichtigsten Details.' },
-      { title: 'Beratung',      text: 'Wir beraten Sie persönlich und entwickeln ein passendes Konzept.' },
-      { title: 'Angebot',       text: 'Sie erhalten ein transparentes und faires Angebot.' },
-      { title: 'Umsetzung',     text: 'Wir setzen alles professionell und zuverlässig um.' },
-      { title: 'Nachbetreuung', text: 'Feedback, Analyse und langfristige Zusammenarbeit.' },
+      { title: 'Anfrage',               text: 'Sie senden uns Ihre Anfrage mit Datum, Ort und gewünschtem Personal.' },
+      { title: 'Bedarf klären',         text: 'Wir sprechen die Details durch und klären, was genau gebraucht wird.' },
+      { title: 'Team zusammenstellen',  text: 'Wir wählen passendes Personal aus und bestätigen die Verfügbarkeit.' },
+      { title: 'Briefing',              text: 'Das Team wird vorbereitet und auf Ihre Anforderungen eingewiesen.' },
+      { title: 'Einsatz vor Ort',       text: 'Pünktlicher, professioneller Einsatz am Eventtag.' },
     ],
   },
 
   testimonials: {
     headline: 'Das sagen unsere Kunden',
+    ariaPrev: 'Vorherige Bewertung',
+    ariaNext: 'Nächste Bewertung',
+    ariaLabel: 'Kundenbewertungen',
     items: [
       {
         quote: 'Funda und ihr Team haben uns auf der Hannover Messe hervorragend betreut. Die Hostessen waren pünktlich, freundlich und haben unsere Gäste selbstständig eingewiesen.',
@@ -166,6 +170,32 @@ const de = {
     legalPrivacy: 'Datenschutz',
   },
 
+  faq: {
+    headline: 'Häufige Fragen',
+    items: [
+      {
+        q: 'Wie kurzfristig kann ich Personal anfragen?',
+        a: 'Je nach Verfügbarkeit sind Anfragen bis wenige Tage vor dem Event möglich. Früher ist besser, aber wir versuchen immer eine Lösung zu finden.',
+      },
+      {
+        q: 'In welchen Städten seid ihr verfügbar?',
+        a: 'Wir sind hauptsächlich in Köln und NRW aktiv, unterstützen aber auf Anfrage auch Events in anderen deutschen Städten.',
+      },
+      {
+        q: 'Gibt es mehrsprachiges Personal?',
+        a: 'Ja. Unser Team spricht unter anderem Deutsch, Türkisch und Englisch. Weitere Sprachen auf Anfrage.',
+      },
+      {
+        q: 'Übernehmt ihr auch Catering-Personal?',
+        a: 'Ja, wir stellen erfahrenes Catering-Personal für jede Eventgröße.',
+      },
+      {
+        q: 'Kann ich Personal für mehrere Messetage buchen?',
+        a: 'Ja, mehrtägige Einsätze sind kein Problem und werden gerne bei der Planung berücksichtigt.',
+      },
+    ],
+  },
+
   links: {
     whatsapp: 'https://wa.me/4922100000000',
     kontaktAnker: '#kontakt',
@@ -213,6 +243,7 @@ const en = {
 
   about: {
     eyebrow: 'About Ajans Köln',
+    since: 'Trusted partner for events since 2019',
     headline: 'Your Partner for Successful Events',
     headlineLine2: 'Across Germany.',
     body: 'Ajans Köln stands for quality, reliability and professional service. We support companies, agencies and organisers with experienced staff, clear processes and a high standard of quality.',
@@ -262,16 +293,19 @@ const en = {
   process: {
     headline: 'How We Work Together',
     steps: [
-      { title: 'Enquiry',      text: 'You send us your request with the key details.' },
-      { title: 'Consultation', text: 'We advise you personally and develop a tailored concept.' },
-      { title: 'Proposal',     text: 'You receive a transparent and fair offer.' },
-      { title: 'Execution',    text: 'We implement everything professionally and reliably.' },
-      { title: 'Follow-up',    text: 'Feedback, analysis and long-term collaboration.' },
+      { title: 'Request',          text: 'Tell us your date, location and staffing needs.' },
+      { title: 'Requirements',     text: 'We go through the details and figure out exactly what you need.' },
+      { title: 'Assemble Team',    text: 'We select the right staff and confirm availability.' },
+      { title: 'Briefing',         text: 'The team is prepared and briefed on your specific requirements.' },
+      { title: 'On-site',          text: 'Punctual, professional service on the day of your event.' },
     ],
   },
 
   testimonials: {
     headline: 'What Our Clients Say',
+    ariaPrev: 'Previous review',
+    ariaNext: 'Next review',
+    ariaLabel: 'Client reviews',
     items: [
       {
         quote: 'Funda and her team did an outstanding job at the Hannover Messe. The hostesses were punctual, friendly and briefed our guests independently.',
@@ -338,6 +372,32 @@ const en = {
     legalPrivacy: 'Datenschutz',
   },
 
+  faq: {
+    headline: 'Frequently Asked Questions',
+    items: [
+      {
+        q: 'How far in advance do I need to book?',
+        a: 'Depending on availability, bookings a few days before the event are possible. The earlier you contact us, the better.',
+      },
+      {
+        q: 'Which cities do you cover?',
+        a: 'We mainly operate in Cologne and the broader NRW region, but we are happy to support events elsewhere in Germany.',
+      },
+      {
+        q: 'Do you have multilingual staff?',
+        a: 'Yes. Our team speaks German, Turkish and English, with other languages available on request.',
+      },
+      {
+        q: 'Do you also provide catering staff?',
+        a: 'Yes, we supply experienced catering staff for events of all sizes.',
+      },
+      {
+        q: 'Can I book staff for multiple days?',
+        a: 'Absolutely. Multi-day assignments are no problem and can be planned in advance.',
+      },
+    ],
+  },
+
   links: {
     whatsapp: 'https://wa.me/4922100000000',
     kontaktAnker: '#kontakt',
@@ -385,6 +445,7 @@ const tr = {
 
   about: {
     eyebrow: 'Ajans Köln Hakkında',
+    since: '2019\'dan bu yana etkinlik ve fuar hizmeti',
     headline: 'Başarılı Etkinlikler İçin',
     headlineLine2: 'Almanya\'da Güvenilir Ortağınız.',
     body: 'Ajans Köln, kalite, güvenilirlik ve temsili hizmet anlayışıyla öne çıkmaktadır. Deneyimli personel, net süreçler ve yüksek kalite standartlarıyla firmalara, ajanslara ve organizatörlere destek sağlıyoruz.',
@@ -434,16 +495,19 @@ const tr = {
   process: {
     headline: 'Birlikte Nasıl Çalışıyoruz',
     steps: [
-      { title: 'Talep',        text: 'Bize en önemli detaylarla birlikte talebinizi iletin.' },
-      { title: 'Danışmanlık',  text: 'Sizi bizzat danışıyoruz ve uygun bir konsept geliştiriyoruz.' },
-      { title: 'Teklif',       text: 'Şeffaf ve adil bir teklif alırsınız.' },
-      { title: 'Uygulama',     text: 'Her şeyi profesyonel ve güvenilir şekilde hayata geçiriyoruz.' },
-      { title: 'Sonrası Destek', text: 'Geri bildirim, analiz ve uzun vadeli iş birliği.' },
+      { title: 'Talep',           text: 'Tarih, yer ve personel ihtiyacınızı bize iletin.' },
+      { title: 'İhtiyaç Analizi', text: 'Detayları birlikte ele alır, neye ihtiyaç duyulduğunu netleştiririz.' },
+      { title: 'Ekip Kurulumu',   text: 'Uygun personeli seçer ve müsaitliklerini teyit ederiz.' },
+      { title: 'Brifing',         text: 'Ekip, gereksinimlerinize göre hazırlanır ve bilgilendirilir.' },
+      { title: 'Sahada',          text: 'Etkinlik günü dakik ve profesyonel hizmet.' },
     ],
   },
 
   testimonials: {
     headline: 'Müşterilerimiz Ne Diyor',
+    ariaPrev: 'Önceki yorum',
+    ariaNext: 'Sonraki yorum',
+    ariaLabel: 'Müşteri yorumları',
     items: [
       {
         quote: 'Funda ve ekibi Hannover Fuarı\'nda bize mükemmel destek sağladı. Hostes ekibi dakik ve güler yüzlüydü; misafirlerimizi bağımsız olarak yönlendirdi.',
@@ -508,6 +572,32 @@ const tr = {
     rights: 'Tüm hakları saklıdır',
     legalImprint: 'Impressum',
     legalPrivacy: 'Datenschutz',
+  },
+
+  faq: {
+    headline: 'Sık Sorulan Sorular',
+    items: [
+      {
+        q: 'Ne kadar önceden rezervasyon yapmalıyım?',
+        a: 'Müsaitlik durumuna göre etkinlikten birkaç gün önce bile talep iletebilirsiniz. Ne kadar erken olursa o kadar iyi olur.',
+      },
+      {
+        q: 'Hangi şehirlerde hizmet veriyorsunuz?',
+        a: 'Ağırlıklı olarak Köln ve Kuzey Ren-Vestfalya bölgesinde çalışıyoruz; talep üzerine diğer şehirlerdeki etkinliklere de destek sağlayabiliriz.',
+      },
+      {
+        q: 'Çok dilli personel var mı?',
+        a: 'Evet. Ekibimiz Almanca, Türkçe ve İngilizce konuşuyor. Diğer diller talep üzerine mümkündür.',
+      },
+      {
+        q: 'Catering personeli de temin ediyor musunuz?',
+        a: 'Evet, her ölçekte etkinlik için deneyimli catering personeli sağlıyoruz.',
+      },
+      {
+        q: 'Birden fazla gün için personel alabilir miyim?',
+        a: 'Evet, çok günlü görevlendirmeler sorunsuz şekilde planlanabilir.',
+      },
+    ],
   },
 
   links: {

@@ -15,15 +15,7 @@ export function CtaBand() {
             {/* Desktop/Tablet: visueller Richtungshinweis statt Button */}
             <div className={styles.contactCue}>
               <span className={styles.contactCueText}>{cta.contactCue}</span>
-              <svg className={styles.cueArrow} viewBox="0 0 52 16" fill="none" aria-hidden>
-                <path
-                  d="M0 8 H44 M36 2 L44 8 L36 14"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+              <span className={styles.cueArrow} aria-hidden />
             </div>
           </div>
 

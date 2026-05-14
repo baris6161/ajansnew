@@ -1,6 +1,7 @@
 .section {
   padding: var(--section-y) 0;
   background: linear-gradient(180deg, var(--surface-warm) 0%, var(--surface) 38%, var(--card-muted) 100%);
+  border-top: 1px solid color-mix(in srgb, var(--gold-soft) 14%, transparent);
 }
 
 .inner {

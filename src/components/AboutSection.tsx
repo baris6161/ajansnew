@@ -89,6 +89,9 @@ export function AboutSection() {
 
         <div className={styles.copy}>
           <p className={styles.eyebrow}>{about.eyebrow}</p>
+          {about.since && (
+            <span className={styles.sinceBadge}>{about.since}</span>
+          )}
           <h2 className={styles.title} id="about-heading">
             {about.headline}
             {about.headlineLine2 && (

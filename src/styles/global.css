@@ -166,3 +166,11 @@ p:last-child {
     transition: none;
   }
 }
+
+/* ── Touch active feedback ────────────────────────────────────── */
+@media (hover: none) {
+  a:active,
+  button:active {
+    opacity: 0.8;
+  }
+}

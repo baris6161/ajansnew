@@ -67,6 +67,45 @@
   max-width: 12rem;
 }
 
+/* ── Animated stat layout ─────────────────────────────────────── */
+.statStack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.statNum {
+  font-family: var(--font-serif);
+  font-size: clamp(1.1rem, 1.6vw, 1.35rem);
+  font-weight: 600;
+  color: var(--espresso);
+  letter-spacing: -0.01em;
+  line-height: 1.1;
+  min-width: 2.5ch;
+}
+
+.statLabel {
+  font-family: var(--font-sans);
+  font-size: clamp(0.62rem, 0.88vw, 0.72rem);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  line-height: 1.25;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 @media (max-width: 900px) {
   .grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));

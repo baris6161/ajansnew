@@ -12,7 +12,7 @@ function splitWords(text: string, startDelay: number, inc: number) {
         className={styles.wordReveal}
         style={{ '--word-delay': `${(startDelay + i * inc).toFixed(2)}s` } as React.CSSProperties}
       >
-        {word}
+        {word === '&' ? <span className={styles.amp}>&amp;</span> : word}
       </span>
       {i < words.length - 1 && ' '}
     </React.Fragment>
@@ -30,7 +30,7 @@ export function Hero() {
       <div className={styles.inner}>
         <div className={styles.copy}>
           <p className={styles.eyebrow}>{hero.eyebrow}</p>
-          <h1 className={styles.h1} id="hero-heading">
+          <h1 className={styles.h1} id="hero-heading" key={hero.h1Before + hero.h1Highlight}>
             {splitWords(hero.h1Before, 0.08, inc)}{' '}
             <span className={styles.highlight}>
               {splitWords(hero.h1Highlight, 0.08 + beforeWordCount * inc, inc)}

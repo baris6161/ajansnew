@@ -92,6 +92,10 @@
   border-bottom-color: color-mix(in srgb, var(--gold) 55%, transparent);
 }
 
+.navLink:active {
+  color: var(--gold-dark);
+}
+
 .right {
   justify-self: end;
   display: flex;
@@ -136,6 +140,11 @@
   background: color-mix(in srgb, var(--card-muted) 65%, transparent);
 }
 
+.langBtn:active {
+  transform: scale(0.94);
+  background: color-mix(in srgb, var(--card-muted) 85%, transparent);
+}
+
 .langActive {
   background: var(--card);
   color: var(--espresso);
@@ -170,6 +179,11 @@
 .cta:hover {
   transform: translateY(-1px);
   box-shadow: 0 14px 32px rgba(184, 135, 70, 0.34);
+}
+
+.cta:active {
+  transform: scale(0.96);
+  box-shadow: 0 6px 16px rgba(184, 135, 70, 0.22);
 }
 
 .menuBtn {

@@ -164,6 +164,11 @@
   box-shadow: 0 22px 52px rgba(184, 135, 70, 0.4);
 }
 
+.btnPrimary:active {
+  transform: translateY(0) scale(0.97);
+  box-shadow: 0 10px 28px rgba(184, 135, 70, 0.28);
+}
+
 .btnGhost {
   display: inline-flex;
   align-items: center;
@@ -191,6 +196,10 @@
   transform: translateY(-2px);
   border-color: color-mix(in srgb, var(--gold) 40%, var(--border));
   background: color-mix(in srgb, var(--card) 92%, transparent);
+}
+
+.btnGhost:active {
+  transform: translateY(0) scale(0.97);
 }
 
 /* ── Tablet (≤ 1023px) ───────────────────────────────────────────── */
@@ -320,6 +329,13 @@
     width: 100%;
     min-height: 50px;
   }
+}
+
+/* ── Ampersand: sans-serif to avoid ornate Playfair & ───────────── */
+.amp {
+  font-family: var(--font-sans);
+  font-style: normal;
+  font-weight: 500;
 }
 
 /* ── Word-Reveal Animation ───────────────────────────────────────── */

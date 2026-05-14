@@ -28,7 +28,7 @@ export function Process() {
     })
 
     return () => observer.disconnect()
-  }, [])
+  }, [process.steps])
 
   return (
     <section className={styles.section} aria-labelledby="process-heading">
