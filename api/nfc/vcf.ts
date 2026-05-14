@@ -16,7 +16,7 @@ export default function handler(_req: VercelRequest, res: VercelResponse) {
   ].join('\r\n')
 
   res.setHeader('Content-Type', 'text/vcard; charset=utf-8')
-  res.setHeader('Content-Disposition', 'attachment; filename="ajans-koeln.vcf"')
+  res.setHeader('Content-Disposition', 'inline; filename="ajans-koeln.vcf"')
   res.setHeader('Cache-Control', 'no-store')
   res.status(200).send(vcf)
 }

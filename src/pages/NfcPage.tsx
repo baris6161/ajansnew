@@ -1,10 +1,24 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Building2, Download, Mail, MessageSquarePlus, Phone } from 'lucide-react'
 import { ReviewModal } from './ReviewModal'
 import styles from './NfcPage.module.css'
 
 export function NfcPage() {
   const [showReview, setShowReview] = useState(false)
+
+  // Force white background for html + body on this standalone page
+  useEffect(() => {
+    const html = document.documentElement
+    const body = document.body
+    const prevHtml = html.style.background
+    const prevBody = body.style.background
+    html.style.background = '#ffffff'
+    body.style.background = '#ffffff'
+    return () => {
+      html.style.background = prevHtml
+      body.style.background = prevBody
+    }
+  }, [])
 
   return (
     <main className={styles.page}>
@@ -40,7 +54,6 @@ export function NfcPage() {
         {/* Primary CTA — save contact */}
         <a
           href="/api/nfc/vcf"
-          download="ajans-koeln.vcf"
           className={styles.btn}
         >
           <Download size={16} aria-hidden />
