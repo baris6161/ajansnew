@@ -26,8 +26,7 @@ export function Testimonials() {
   const total = items.length
 
   const visibleCount = useVisibleCount()
-  const maxActive = total - visibleCount  // 5 (desktop) or 7 (mobile)
-  const slideWidthPct = 100 / visibleCount
+  const maxActive = total - visibleCount
 
   const [active, setActive] = useState(0)
   const [paused, setPaused] = useState(false)
@@ -35,10 +34,10 @@ export function Testimonials() {
   const trackRef = useRef<HTMLDivElement>(null)
   const touchStart = useRef(0)
 
-  // Clamp active when visibleCount changes
+  // Clamp active when visibleCount changes (e.g. resize from mobile to desktop)
   useEffect(() => {
-    setActive((prev) => Math.min(prev, maxActive))
-  }, [maxActive])
+    setActive((prev) => Math.min(prev, total - visibleCount))
+  }, [visibleCount, total])
 
   const clearTimer = () => {
     if (timerRef.current) clearInterval(timerRef.current)
@@ -90,8 +89,23 @@ export function Testimonials() {
     else if (diff < -50) handlePrev()
   }
 
-  const gapOffset = visibleCount > 1 ? (1.25 * (visibleCount - 1)) / visibleCount : 0
-  const slideBasis = `calc(${slideWidthPct}% - ${gapOffset.toFixed(4)}rem)`
+  /*
+   * Carousel math — using track-width approach so % is always relative
+   * to a known container, never circular:
+   *
+   *  - Track width = (total / visibleCount) × 100% of the slider
+   *  - Each slide  = (100 / total)% of the track
+   *                = (100/total) × (total/visibleCount)% of the slider
+   *                = (100/visibleCount)% of the slider  ✓
+   *  - Translate   = -(active / total × 100)% of the track
+   *                = -(active/total) × (total/visibleCount) × 100% of slider
+   *                = -(active × 100/visibleCount)% of the slider  ✓
+   *
+   * Visual gaps handled via padding on .slide (no gap property needed).
+   */
+  const trackWidthPct = (total / visibleCount) * 100
+  const slideFlexBasis = `${100 / total}%`
+  const translatePct = (active / total) * 100
 
   return (
     <section
@@ -117,29 +131,33 @@ export function Testimonials() {
               ref={trackRef}
               className={styles.track}
               style={{
-                transform: `translateX(-${active * slideWidthPct}%)`,
-                gap: visibleCount > 1 ? '1.25rem' : '0',
+                width: `${trackWidthPct}%`,
+                transform: `translateX(-${translatePct}%)`,
               }}
             >
               {items.map((t, i) => {
                 const isVisible = i >= active && i < active + visibleCount
                 return (
-                  <blockquote
+                  <div
                     key={i}
-                    className={styles.card}
-                    style={{ flex: `0 0 ${slideBasis}` }}
-                    role="group"
-                    aria-label={`${i + 1} / ${total}`}
-                    aria-hidden={!isVisible}
+                    className={`${styles.slide} ${visibleCount === 1 ? styles.slideSingle : ''}`}
+                    style={{ flex: `0 0 ${slideFlexBasis}` }}
                   >
-                    <div className={styles.stars} aria-hidden>
-                      {Array.from({ length: 5 }).map((_, si) => (
-                        <Star key={si} size={16} fill="currentColor" strokeWidth={0} />
-                      ))}
-                    </div>
-                    <p className={styles.quote}>„{t.quote}"</p>
-                    <footer className={styles.role}>{t.role}</footer>
-                  </blockquote>
+                    <blockquote
+                      className={styles.card}
+                      role="group"
+                      aria-label={`${i + 1} / ${total}`}
+                      aria-hidden={!isVisible}
+                    >
+                      <div className={styles.stars} aria-hidden>
+                        {Array.from({ length: 5 }).map((_, si) => (
+                          <Star key={si} size={16} fill="currentColor" strokeWidth={0} />
+                        ))}
+                      </div>
+                      <p className={styles.quote}>„{t.quote}"</p>
+                      <footer className={styles.role}>{t.role}</footer>
+                    </blockquote>
+                  </div>
                 )
               })}
             </div>
@@ -163,7 +181,7 @@ export function Testimonials() {
                   role="tab"
                   className={`${styles.dot} ${i === active ? styles.dotActive : ''}`}
                   onClick={() => jumpTo(i)}
-                  aria-label={`${testimonials.ariaPrev?.split(' ')[0]} ${i + 1}`}
+                  aria-label={`${i + 1}`}
                   aria-selected={i === active}
                 />
               ))}

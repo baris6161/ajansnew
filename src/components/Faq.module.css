@@ -19,6 +19,16 @@
   margin: 0;
 }
 
+/* ── Panel container ──────────────────────────────────────────── */
+.panel {
+  background: linear-gradient(160deg, var(--card) 0%, color-mix(in srgb, var(--surface) 55%, var(--card)) 100%);
+  border: var(--card-edge);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  padding: 0 clamp(1.5rem, 3vw, 2.5rem);
+  overflow: hidden;
+}
+
 /* ── List ─────────────────────────────────────────────────────── */
 .list {
   margin: 0;
@@ -30,8 +40,8 @@
   border-bottom: 1px solid color-mix(in srgb, var(--gold-soft) 22%, var(--border));
 }
 
-.item:first-child {
-  border-top: 1px solid color-mix(in srgb, var(--gold-soft) 22%, var(--border));
+.item:last-child {
+  border-bottom: none;
 }
 
 /* ── Question button ──────────────────────────────────────────── */

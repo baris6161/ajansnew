@@ -15,6 +15,7 @@ export function Faq() {
         <div className={styles.head}>
           <h2 id="faq-heading">{faq.headline}</h2>
         </div>
+        <div className={styles.panel}>
         <dl className={styles.list}>
           {faq.items.map((item, i) => {
             const isOpen = openIdx === i
@@ -53,6 +54,7 @@ export function Faq() {
             )
           })}
         </dl>
+        </div>
       </div>
     </section>
   )

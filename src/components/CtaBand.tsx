@@ -12,10 +12,20 @@ export function CtaBand() {
             <h2 id="cta-heading">{cta.headline}</h2>
             <p>{cta.sub}</p>
 
-            {/* Desktop/Tablet: visueller Richtungshinweis statt Button */}
-            <div className={styles.contactCue}>
-              <span className={styles.contactCueText}>{cta.contactCue}</span>
-              <span className={styles.cueArrow} aria-hidden />
+            {/* Desktop only: 3 visual arrows pointing to each channel card */}
+            <div className={styles.cues} aria-hidden="true">
+              <div className={styles.cueRow}>
+                <span className={styles.cueLabel}>{cta.whatsapp}</span>
+                <span className={styles.cueArrow} />
+              </div>
+              <div className={styles.cueRow}>
+                <span className={styles.cueLabel}>{cta.phone}</span>
+                <span className={styles.cueArrow} />
+              </div>
+              <div className={styles.cueRow}>
+                <span className={styles.cueLabel}>{cta.email}</span>
+                <span className={styles.cueArrow} />
+              </div>
             </div>
           </div>
 
