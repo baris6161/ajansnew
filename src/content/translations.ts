@@ -422,7 +422,7 @@ const tr = {
       { href: '#ueber-uns',  label: 'Hakkımızda' },
       { href: '#leistungen', label: 'Hizmetler' },
       { href: '#referenzen', label: 'Yorumlar' },
-      { href: '#faq',        label: 'SSS' },
+      { href: '#faq',        label: 'Sık Sorular' },
       { href: '#kontakt',    label: 'İletişim' },
     ],
   },
