@@ -21,28 +21,18 @@
 }
 
 .brand {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 3px;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
-  color: var(--text);
+  flex-shrink: 0;
 }
 
-.brandName {
-  font-family: var(--font-serif);
-  font-size: 1.4rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  line-height: 1.05;
-}
-
-.brandTag {
-  font-size: 0.62rem;
-  letter-spacing: 0.24em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  font-weight: 600;
+.brandLogo {
+  display: block;
+  height: 46px;
+  width: auto;
+  object-fit: contain;
+  object-position: left center;
 }
 
 .navCenter {
@@ -342,12 +332,8 @@
     padding-block: 8px;
   }
 
-  .brandName {
-    font-size: 1.22rem;
-  }
-
-  .brandTag {
-    font-size: 0.58rem;
+  .brandLogo {
+    height: 38px;
   }
 
   .menuBtn {
