@@ -28,6 +28,50 @@
   color: #4a2a1f;
 }
 
+/* ── Lang switcher ─────────────────────────────────────────────── */
+.langSwitch {
+  position: absolute;
+  top: 1.05rem;
+  right: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background: rgba(74, 42, 31, 0.07);
+  border-radius: 10px;
+  padding: 3px;
+  animation: fadeIn 0.4s ease 0.1s both;
+}
+
+.langBtn {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #999999;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px 9px;
+  border-radius: 7px;
+  min-height: 28px;
+  min-width: 36px;
+  font-family: inherit;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.langBtn:hover {
+  color: #4a2a1f;
+}
+
+.langBtn:active {
+  transform: scale(0.95);
+}
+
+.langBtnActive {
+  background: #ffffff;
+  color: #4a2a1f;
+  box-shadow: 0 1px 4px rgba(74, 42, 31, 0.14);
+}
+
 /* ── Wrap ─────────────────────────────────────────────────────── */
 .wrap {
   max-width: 360px;

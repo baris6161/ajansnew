@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
 import { X } from 'lucide-react'
+import type { ModalContent } from './NfcPage'
 import styles from './ReviewModal.module.css'
 
 interface Props {
+  content: ModalContent
   onClose: () => void
 }
 
@@ -17,7 +19,7 @@ const EMPTY: FormState = { nameOrCompany: '', rating: 0, comment: '', honeypot: 
 
 type Status = 'idle' | 'sending' | 'success' | 'error'
 
-export function ReviewModal({ onClose }: Props) {
+export function ReviewModal({ content: c, onClose }: Props) {
   const [form, setForm] = useState<FormState>(EMPTY)
   const [hover, setHover] = useState(0)
   const [errors, setErrors] = useState<{ rating?: string; comment?: string }>({})
@@ -55,9 +57,9 @@ export function ReviewModal({ onClose }: Props) {
   // ── Validation ──────────────────────────────────────────────────
   function validate(): boolean {
     const e: typeof errors = {}
-    if (!form.rating) e.rating = 'Lütfen bir puan seç.'
+    if (!form.rating) e.rating = c.ratingError
     if (!form.comment.trim() || form.comment.trim().length < 3)
-      e.comment = 'Lütfen kısa bir yorum yaz.'
+      e.comment = c.commentError
     setErrors(e)
     return Object.keys(e).length === 0
   }
@@ -110,24 +112,24 @@ export function ReviewModal({ onClose }: Props) {
       >
         {/* ── Header ── */}
         <div className={styles.dialogHeader}>
-          <h2 id="review-modal-title" className={styles.dialogTitle}>Yorum Yaz</h2>
+          <h2 id="review-modal-title" className={styles.dialogTitle}>{c.title}</h2>
           <button
             type="button"
             className={styles.closeBtn}
             onClick={onClose}
-            aria-label="Kapat"
+            aria-label={c.closeLabel}
             disabled={busy}
           >
             <X size={18} strokeWidth={2} aria-hidden />
           </button>
         </div>
 
-        <p className={styles.hint}>Deneyimini bizimle paylaş. Kısa bir yorum yeterli.</p>
+        <p className={styles.hint}>{c.hint}</p>
 
         {/* ── Success state ── */}
         {status === 'success' ? (
           <div className={styles.successMsg} role="status">
-            Teşekkürler. Yorumun bize ulaştı.
+            {c.success}
           </div>
         ) : (
           <form onSubmit={onSubmit} noValidate>
@@ -144,18 +146,18 @@ export function ReviewModal({ onClose }: Props) {
               className={styles.honeypot}
             />
 
-            {/* ── Name / Firma (optional) ── */}
+            {/* ── Name / Company (optional) ── */}
             <div className={styles.field}>
               <label htmlFor="review-name" className={styles.label}>
-                Adın veya firma adın
-                <span className={styles.optional}> (isteğe bağlı)</span>
+                {c.nameLabel}
+                <span className={styles.optional}> {c.optional}</span>
               </label>
               <input
                 ref={firstRef}
                 id="review-name"
                 type="text"
                 className={styles.input}
-                placeholder="Örn. Ayşe Yılmaz veya ABC GmbH"
+                placeholder={c.namePlaceholder}
                 value={form.nameOrCompany}
                 maxLength={100}
                 onChange={e => setForm(f => ({ ...f, nameOrCompany: e.target.value }))}
@@ -166,7 +168,7 @@ export function ReviewModal({ onClose }: Props) {
 
             {/* ── Star rating ── */}
             <div className={styles.field}>
-              <span className={styles.label} id="stars-label">Puanın</span>
+              <span className={styles.label} id="stars-label">{c.ratingLabel}</span>
               <div
                 className={styles.stars}
                 role="radiogroup"
@@ -179,7 +181,7 @@ export function ReviewModal({ onClose }: Props) {
                     type="button"
                     role="radio"
                     aria-checked={form.rating === n}
-                    aria-label={`${n} yıldız`}
+                    aria-label={c.starAria(n)}
                     className={`${styles.star} ${activeStar >= n ? styles.starOn : ''}`}
                     onClick={() => { setForm(f => ({ ...f, rating: n })); setErrors(e => ({ ...e, rating: undefined })) }}
                     onMouseEnter={() => setHover(n)}
@@ -196,11 +198,11 @@ export function ReviewModal({ onClose }: Props) {
 
             {/* ── Comment ── */}
             <div className={styles.field}>
-              <label htmlFor="review-comment" className={styles.label}>Yorumun</label>
+              <label htmlFor="review-comment" className={styles.label}>{c.commentLabel}</label>
               <textarea
                 id="review-comment"
                 className={styles.textarea}
-                placeholder="Kısaca deneyimini yazabilirsin"
+                placeholder={c.commentPlaceholder}
                 rows={4}
                 value={form.comment}
                 maxLength={2000}
@@ -215,7 +217,7 @@ export function ReviewModal({ onClose }: Props) {
             {/* ── Send error ── */}
             {status === 'error' && (
               <p className={styles.sendError} role="alert">
-                Yorum gönderilemedi. Lütfen daha sonra tekrar dene.
+                {c.sendError}
               </p>
             )}
 
@@ -225,7 +227,7 @@ export function ReviewModal({ onClose }: Props) {
               className={styles.submitBtn}
               disabled={busy}
             >
-              {busy ? 'Gönderiliyor…' : 'Gönder'}
+              {busy ? c.sending : c.submit}
             </button>
           </form>
         )}
