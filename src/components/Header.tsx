@@ -90,14 +90,9 @@ export function Header() {
   return (
     <header className={styles.root}>
       <div className={styles.inner}>
-        <a className={styles.brand} href="/" onClick={handleLogo} aria-label="Ajans Köln – Fair Organisation, Zur Startseite">
-          <img
-            src="/images/ajans-koeln/logo-ajans-koeln.png"
-            alt="Ajans Köln – Fair Organisation"
-            className={styles.brandLogo}
-            width={120}
-            height={48}
-          />
+        <a className={styles.brand} href="/" onClick={handleLogo}>
+          <span className={styles.brandName}>Ajans Köln</span>
+          <span className={styles.brandTag}>Fair Organisation</span>
         </a>
 
         <nav className={styles.navCenter} aria-label="Hauptnavigation">
