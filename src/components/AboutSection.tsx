@@ -106,7 +106,7 @@ export function AboutSection() {
             {about.bullets.map((b) => (
               <li key={b}>
                 <span className={styles.check} aria-hidden>
-                  <Check size={15} strokeWidth={2.5} />
+                  <Check size={12} strokeWidth={2.5} />
                 </span>
                 {b}
               </li>
