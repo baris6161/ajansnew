@@ -471,7 +471,7 @@ const tr = {
       },
       {
         title: 'Catering ve İkram',
-        text: 'Etkinliğinize özel kaliteli catering ve şık ikram. Her detayı önceden planlarız.',
+        text: 'Her detay size özel şekilde önceden planlanır. Taleplerinizi bildirmeniz yeterli olacaktır. Size uygun menüler değerli misafirleriniz için sunuma hazır olacaktır.',
         key: 'catering' as const,
       },
       {
