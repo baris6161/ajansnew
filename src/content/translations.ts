@@ -44,7 +44,7 @@ const de = {
     eyebrow: 'Über Ajans Köln',
     since: 'Seit 2014 für Events und Messen im Einsatz',
     headline: 'Ihr Partner für erfolgreiche Veranstaltungen',
-    headlineLine2: 'in Deutschland und weltweit',
+    headlineLine2: '',
     body: 'Ajans Köln steht für Qualität, Verlässlichkeit und repräsentativen Service. Wir unterstützen Unternehmen, Agenturen und Veranstalter mit erfahrenem Personal, klaren Abläufen und einem hohen Qualitätsanspruch.',
     bullets: [
       'Erfahrenes, mehrsprachiges Personal',
