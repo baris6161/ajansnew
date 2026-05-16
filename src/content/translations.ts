@@ -488,7 +488,7 @@ const tr = {
       'Yıllarca Kazanılmış Fuar Tecrübesi',
       'Çok Dilli Ekip',
       'Almanya\'da ve Dünyada',
-      'Tek Bir Muhatap, Sıfır Karmaşa',
+      'Tek Bir Muhatap, Sıfır Karmaşa',
     ],
   },
 
