@@ -62,7 +62,7 @@ const de = {
     items: [
       {
         title: 'Hostess-Service',
-        text: 'Professionelle Hostessen und Hosts für Empfang, Akkreditierung, Promotion und Standunterstützung.',
+        text: 'Professionelle Hostessen und Hosts für Empfang, Akkreditierung, Promotion, Dolmetschen und Standunterstützung.',
         key: 'hostess' as const,
       },
       {
@@ -264,7 +264,7 @@ const en = {
     items: [
       {
         title: 'Hostess Service',
-        text: 'Professional hostesses and hosts for reception, accreditation, promotion and stand support.',
+        text: 'Professional hostesses and hosts for reception, accreditation, promotion, interpretation and stand support.',
         key: 'hostess' as const,
       },
       {
@@ -466,7 +466,7 @@ const tr = {
     items: [
       {
         title: 'Hostes Hizmetleri',
-        text: 'Karşılama, akreditasyon, promosyon veya stand desteği — doğru insanları bulup hazırlıyoruz.',
+        text: 'Karşılama, akreditasyon, promosyon, tercümanlık veya stand desteği — doğru insanları bulup hazırlıyoruz.',
         key: 'hostess' as const,
       },
       {
