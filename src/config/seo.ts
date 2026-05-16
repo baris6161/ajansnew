@@ -3,7 +3,7 @@
  * TODO: In Vercel Produktion `VITE_SITE_URL` auf die finale Domain setzen (ohne Slash am Ende).
  * Ohne Variable wird der Fallback genutzt (aktuell Vercel Standardhost).
  */
-export const SITE_URL_FALLBACK = 'https://ajansnew.vercel.app'
+export const SITE_URL_FALLBACK = 'https://ajanskoeln.de'
 
 export function getSiteUrl(): string {
   const raw = import.meta.env.VITE_SITE_URL as string | undefined
@@ -23,21 +23,21 @@ export const seoPages: Record<
 > = {
   home: {
     path: '/',
-    title: 'Hostessen und Catering für Messen | Ajans Köln',
+    title: 'Trade Fair Hostess & Catering Staff Across Germany | Ajans Köln',
     description:
-      'Ajans Köln vermittelt Hostessen, Hosts und Catering für Messen in Deutschland. Mehrsprachiges Team, klare Abläufe, Kontakt per Telefon oder E-Mail.',
+      'Ajans Köln supplies professional hostess, catering and booth management staff for trade fairs and corporate events throughout Germany. Multilingual team, seamless planning.',
   },
   impressum: {
     path: '/impressum',
-    title: 'Impressum Anbieterangaben Ajans Köln',
+    title: 'Legal Notice | Ajans Köln Fair Organisation',
     description:
-      'Impressum der Ajans Köln Fair Organisation nach TMG mit Anbieterangaben, Kontakt und rechtlichen Hinweisen zu Inhalten, externen Links und Urheberrecht.',
+      'Legal notice (Impressum) for Ajans Köln Fair Organisation — provider details, contact information and legal disclosures as required by German law.',
   },
   datenschutz: {
     path: '/datenschutz',
-    title: 'Datenschutz Ajans Köln Fair Organisation',
+    title: 'Privacy Policy | Ajans Köln Fair Organisation',
     description:
-      'Datenschutzerklärung der Ajans Köln Fair Organisation zu Logdaten, Kontakt, Cookies und Rechten nach DSGVO sowie der zuständigen Aufsichtsbehörde in NRW.',
+      'Privacy policy for Ajans Köln Fair Organisation covering data collection, contact forms, cookies and your rights under GDPR.',
   },
 }
 
@@ -45,20 +45,20 @@ import type { Lang } from '../context/lang'
 
 export const seoMeta: Record<Lang, { title: string; description: string; htmlLang: string; ogLocale: string }> = {
   de: {
-    title: 'Hostessen und Catering für Messen | Ajans Köln',
-    description: 'Ajans Köln vermittelt Hostessen, Hosts und Catering für Messen in Deutschland. Mehrsprachiges Team, klare Abläufe, Kontakt per Telefon oder E-Mail.',
+    title: 'Hostessen & Catering Personal für Messen | Ajans Köln',
+    description: 'Professionelles Hostessen-, Catering- und Standpersonal für Messen und Events in ganz Deutschland. Mehrsprachiges Team, zuverlässige Planung — Ajans Köln.',
     htmlLang: 'de',
     ogLocale: 'de_DE',
   },
   en: {
-    title: 'Hostess & Catering Services for Trade Fairs | Ajans Köln',
-    description: 'Ajans Köln provides hostess and catering staff for trade fairs and events across Germany. Multilingual team, reliable planning, easy to reach.',
+    title: 'Trade Fair Hostess & Catering Staff Across Germany | Ajans Köln',
+    description: 'Need professional staff for your next trade fair or corporate event? Ajans Köln provides hostesses, catering and booth management across Germany. Multilingual, reliable, easy to book.',
     htmlLang: 'en',
     ogLocale: 'en_GB',
   },
   tr: {
-    title: 'Fuar ve Etkinlikler için Hostes Hizmetleri | Ajans Köln',
-    description: 'Ajans Köln, Almanya genelinde fuar ve etkinlikler için hostes ve catering personeli sağlar. Çok dilli ekip, güvenilir planlama, kolay iletişim.',
+    title: 'Almanya Genelinde Fuar ve Etkinlik Personeli | Ajans Köln',
+    description: 'Fuarlarınız ve kurumsal etkinlikleriniz için profesyonel hostes, catering ve stant yönetimi hizmeti. Çok dilli ekip, güvenilir planlama — Ajans Köln.',
     htmlLang: 'tr',
     ogLocale: 'tr_TR',
   },
@@ -67,14 +67,14 @@ export const seoMeta: Record<Lang, { title: string; description: string; htmlLan
 export const siteSeo = {
   siteName: 'Ajans Köln Fair Organisation',
   brandShort: 'Ajans Köln',
-  defaultLocale: 'de_DE',
-  htmlLang: 'de',
+  defaultLocale: 'en_GB',
+  htmlLang: 'en',
   themeColor: '#2a211b',
   /** Relativer Pfad unter public, für OG und Preload */
   ogImagePath: '/images/ajans-koeln/hero-keyvisual-v2.png',
   ogImageWidth: 1920,
   ogImageHeight: 1080,
   ogImageAlt:
-    'Funda Ekiz, Inhaberin von Ajans Köln Fair Organisation, bei der Betreuung eines Events',
+    'Professional event staff at a trade fair — Ajans Köln Fair Organisation',
   twitterCard: 'summary_large_image' as const,
 } as const

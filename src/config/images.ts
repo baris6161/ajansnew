@@ -22,9 +22,9 @@ export const images = {
 } as const
 
 export const imageAlts = {
-  hero: 'Funda Ekiz, Inhaberin von Ajans Köln Fair Organisation, im Einsatz auf einer Messe',
-  aboutPortrait: 'Porträt von Funda Ekiz, Ansprechpartnerin für Hostess und Event Service',
-  serviceHostess: 'Hostess Team im Einsatz auf einer Messe',
-  serviceCatering: 'Catering und Bewirtung auf einem Firmenevent',
-  serviceStand: 'Messestand mit betreutem Personal und Material',
+  hero: 'Professional event staff at a trade fair managed by Ajans Köln Fair Organisation',
+  aboutPortrait: 'Funda Ekiz, founder of Ajans Köln Fair Organisation, trade fair and event staffing specialist',
+  serviceHostess: 'Ajans Köln hostess team welcoming guests at a trade fair booth',
+  serviceCatering: 'Professional catering service at a corporate event by Ajans Köln',
+  serviceStand: 'Fully staffed and managed exhibition booth at a German trade fair',
 } as const

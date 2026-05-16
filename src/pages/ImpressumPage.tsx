@@ -39,7 +39,7 @@ export function ImpressumPage() {
             <h2>Kontakt</h2>
             <p>
               Telefon: <a href="tel:+491727532501">+49 172 7532501</a><br />
-              E-Mail: <a href="mailto:kontakt@ajans-koeln.de">kontakt@ajans-koeln.de</a>
+              E-Mail: <a href="mailto:ajanskoeln@gmail.com">ajanskoeln@gmail.com</a>
             </p>
           </div>
 

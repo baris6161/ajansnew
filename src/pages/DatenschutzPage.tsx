@@ -34,7 +34,7 @@ export function DatenschutzPage() {
                 Musterstraße 1<br />
                 50667 Köln<br />
                 Deutschland<br />
-                E-Mail: <a href="mailto:kontakt@ajans-koeln.de">kontakt@ajans-koeln.de</a><br />
+                E-Mail: <a href="mailto:ajanskoeln@gmail.com">ajanskoeln@gmail.com</a><br />
                 Telefon: <a href="tel:+491727532501">+49 172 7532501</a>
               </p>
             </address>
@@ -151,7 +151,7 @@ export function DatenschutzPage() {
             </p>
             <p>
               Zur Ausübung dieser Rechte wenden Sie sich bitte an:{' '}
-              <a href="mailto:kontakt@ajans-koeln.de">kontakt@ajans-koeln.de</a>
+              <a href="mailto:ajanskoeln@gmail.com">ajanskoeln@gmail.com</a>
             </p>
           </div>
 

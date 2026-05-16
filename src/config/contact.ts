@@ -12,7 +12,7 @@ export const CONTACT = {
   /** Organisation */
   org:         'Ajans Köln',
   /** Job title shown on page and in vCard TITLE field */
-  title:       'Fuar Organizasyonu',
+  title:       'Fair Organisation',
   /** E.164 format (no spaces) — used in TEL vCard field and tel: href */
   tel:         '+491727532501',
   /** Human-readable format — shown on page */
