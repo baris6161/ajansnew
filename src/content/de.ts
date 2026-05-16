@@ -4,11 +4,11 @@ export const site = {
 } as const
 
 export const hero = {
-  eyebrow: 'Deutschlandweit verfügbar',
+  eyebrow: 'Weltweit verfügbar',
   h1Before: 'Professionelle Hostess- und Catering-Services für ',
   h1Highlight: 'Messen und Events',
   sub:
-    'Mehrsprachiges Personal, strukturierte Planung und repräsentativer Auftritt für Messen, Firmenevents und exklusive Veranstaltungen in ganz Deutschland.',
+    'Mehrsprachiges Personal, strukturierte Planung und repräsentativer Auftritt für Messen, Firmenevents und exklusive Veranstaltungen – in Deutschland und weltweit.',
   ctaPrimary: 'Jetzt unverbindlich anfragen',
   ctaSecondary: 'Leistungen ansehen',
 } as const
@@ -17,7 +17,7 @@ export const trust = [
   { title: '12+ Jahre Erfahrung', key: 'exp' as const },
   { title: '50+ Events', key: 'events' as const },
   { title: '5 Sprachen', key: 'lang' as const },
-  { title: 'DE-Weit im Einsatz', key: 'de' as const },
+  { title: 'Weltweit aktiv', key: 'de' as const },
 ] as const
 
 export const partners = {
@@ -26,7 +26,7 @@ export const partners = {
 
 export const about = {
   eyebrow: 'Über Ajans Köln',
-  headline: 'Ihr Partner für erfolgreiche Veranstaltungen in ganz Deutschland.',
+  headline: 'Ihr Partner für erfolgreiche Veranstaltungen in Deutschland und weltweit.',
   body: 'Ajans Köln steht für Qualität, Verlässlichkeit und repräsentativen Service. Wir unterstützen Unternehmen, Agenturen und Veranstalter mit erfahrenem Personal, klaren Abläufen und einem hohen Qualitätsanspruch.',
   bullets: [
     'Erfahrenes, mehrsprachiges Personal',
@@ -36,7 +36,7 @@ export const about = {
   ],
   signature: 'Funda Ekiz',
   /** Karte „Über uns“ – Städte als Punkte in AboutSection.tsx positioniert */
-  mapTagline: 'Deutschlandweit im Einsatz',
+  mapTagline: 'Deutschland & darüber hinaus',
   mapKicker: 'Einsatzgebiet',
   mapCitiesLine:
     'Köln · Düsseldorf · Frankfurt · Hannover · Berlin · Hamburg · München · Stuttgart · Leipzig',
@@ -130,7 +130,7 @@ export const footer = {
   phoneHref: 'tel:+491727532501',
   emailDisplay: 'ajanskoeln@gmail.com',
   emailHref: 'mailto:ajanskoeln@gmail.com',
-  cities: 'Deutschlandweit · Messen · Roadshows · Firmenevents',
+  cities: 'Deutschland & Weltweit · Messen · Roadshows · Firmenevents',
   legalImprint: 'Impressum',
   legalPrivacy: 'Datenschutz',
 } as const

@@ -22,10 +22,10 @@ const de = {
   },
 
   hero: {
-    eyebrow: 'Deutschlandweit verfügbar',
+    eyebrow: 'Weltweit verfügbar',
     h1Before: 'Professionelle Hostess- und Catering-Services für',
     h1Highlight: 'Messen und Events',
-    sub: 'Mehrsprachiges Personal, strukturierte Planung und repräsentativer Auftritt für Messen, Firmenevents und exklusive Veranstaltungen in ganz Deutschland.',
+    sub: 'Mehrsprachiges Personal, strukturierte Planung und repräsentativer Auftritt für Messen, Firmenevents und exklusive Veranstaltungen – in Deutschland und weltweit.',
     ctaPrimary: 'Jetzt unverbindlich anfragen',
   },
 
@@ -33,7 +33,7 @@ const de = {
     { title: '12+ Jahre Erfahrung', key: 'exp' as const },
     { title: '50+ Events',          key: 'events' as const },
     { title: '5 Sprachen',          key: 'lang' as const },
-    { title: 'DE-Weit im Einsatz',  key: 'de' as const },
+    { title: 'Weltweit aktiv',      key: 'de' as const },
   ],
 
   partners: {
@@ -44,7 +44,7 @@ const de = {
     eyebrow: 'Über Ajans Köln',
     since: 'Seit 2019 für Events und Messen im Einsatz',
     headline: 'Ihr Partner für erfolgreiche Veranstaltungen',
-    headlineLine2: 'in ganz Deutschland.',
+    headlineLine2: 'in Deutschland und weltweit.',
     body: 'Ajans Köln steht für Qualität, Verlässlichkeit und repräsentativen Service. Wir unterstützen Unternehmen, Agenturen und Veranstalter mit erfahrenem Personal, klaren Abläufen und einem hohen Qualitätsanspruch.',
     bullets: [
       'Erfahrenes, mehrsprachiges Personal',
@@ -52,7 +52,7 @@ const de = {
       'Klare Pakete für Empfang, Service und Messestand',
     ],
     signature: 'Funda Ekiz',
-    mapTagline: 'Deutschlandweit im Einsatz',
+    mapTagline: 'Deutschland & darüber hinaus',
     mapKicker: 'Einsatzgebiet',
     mapCitiesLine: 'Köln · Düsseldorf · Frankfurt · Hannover · Berlin · Hamburg · München · Stuttgart · Leipzig',
   },
@@ -83,7 +83,7 @@ const de = {
     items: [
       'Langjährige Messeerfahrung',
       'Mehrsprachiges Team',
-      'Deutschlandweit verfügbar',
+      'Weltweit verfügbar',
       'Fester Ansprechpartner',
     ],
   },
@@ -164,7 +164,7 @@ const de = {
     phoneHref: 'tel:+491727532501',
     emailDisplay: 'ajanskoeln@gmail.com',
     emailHref: 'mailto:ajanskoeln@gmail.com',
-    cities: 'Deutschlandweit · Messen · Roadshows · Firmenevents',
+    cities: 'Deutschland & Weltweit · Messen · Roadshows · Firmenevents',
     rights: 'Alle Rechte vorbehalten',
     legalImprint: 'Impressum',
     legalPrivacy: 'Datenschutz',
@@ -179,7 +179,7 @@ const de = {
       },
       {
         q: 'In welchen Städten seid ihr verfügbar?',
-        a: 'Wir sind deutschlandweit tätig – von Köln über Frankfurt und Hamburg bis Berlin und München. Kein Einsatzort ist zu weit.',
+        a: 'Wir sind deutschlandweit tätig – von Köln über Frankfurt und Hamburg bis Berlin und München – und unterstützen auf Anfrage auch internationale Events.',
       },
       {
         q: 'Gibt es mehrsprachiges Personal?',
@@ -224,10 +224,10 @@ const en = {
   },
 
   hero: {
-    eyebrow: 'Available Across Germany',
+    eyebrow: 'Available Worldwide',
     h1Before: 'Professional Hostess & Catering Services for',
     h1Highlight: 'Trade Fairs & Events',
-    sub: 'Multilingual staff, structured planning and a representative presence for trade fairs, corporate events and exclusive events across Germany.',
+    sub: 'Multilingual staff, structured planning and a representative presence for trade fairs, corporate events and exclusive events — in Germany and worldwide.',
     ctaPrimary: 'Request a Quote',
   },
 
@@ -235,7 +235,7 @@ const en = {
     { title: '12+ Years Experience', key: 'exp' as const },
     { title: '50+ Events',           key: 'events' as const },
     { title: '5 Languages',          key: 'lang' as const },
-    { title: 'Nationwide',           key: 'de' as const },
+    { title: 'Worldwide',            key: 'de' as const },
   ],
 
   partners: {
@@ -246,7 +246,7 @@ const en = {
     eyebrow: 'About Ajans Köln',
     since: 'Trusted partner for events since 2019',
     headline: 'Your Partner for Successful Events',
-    headlineLine2: 'Across Germany.',
+    headlineLine2: 'in Germany and Worldwide.',
     body: 'Ajans Köln stands for quality, reliability and professional service. We support companies, agencies and organisers with experienced staff, clear processes and a high standard of quality.',
     bullets: [
       'Experienced, multilingual staff',
@@ -254,7 +254,7 @@ const en = {
       'Clear packages for reception, service and trade stands',
     ],
     signature: 'Funda Ekiz',
-    mapTagline: 'Active Across Germany',
+    mapTagline: 'Germany & Beyond',
     mapKicker: 'Service Area',
     mapCitiesLine: 'Cologne · Düsseldorf · Frankfurt · Hanover · Berlin · Hamburg · Munich · Stuttgart · Leipzig',
   },
@@ -285,7 +285,7 @@ const en = {
     items: [
       'Years of Trade Fair Experience',
       'Multilingual Team',
-      'Available Across Germany',
+      'Available Worldwide',
       'Dedicated Point of Contact',
     ],
   },
@@ -366,10 +366,10 @@ const en = {
     phoneHref: 'tel:+491727532501',
     emailDisplay: 'ajanskoeln@gmail.com',
     emailHref: 'mailto:ajanskoeln@gmail.com',
-    cities: 'Nationwide · Trade Fairs · Roadshows · Corporate Events',
+    cities: 'Germany & Worldwide · Trade Fairs · Roadshows · Corporate Events',
     rights: 'All rights reserved',
-    legalImprint: 'Impressum',
-    legalPrivacy: 'Datenschutz',
+    legalImprint: 'Legal Notice',
+    legalPrivacy: 'Privacy Policy',
   },
 
   faq: {
@@ -381,7 +381,7 @@ const en = {
       },
       {
         q: 'Which cities do you cover?',
-        a: 'We operate across Germany — from Cologne and Frankfurt to Hamburg, Berlin and Munich. No location is too far.',
+        a: 'We operate across Germany — from Cologne and Frankfurt to Hamburg, Berlin and Munich — and also support international events on request.',
       },
       {
         q: 'Do you have multilingual staff?',
@@ -426,10 +426,10 @@ const tr = {
   },
 
   hero: {
-    eyebrow: 'Tüm Almanya\'da Hizmet Veriyoruz',
-    h1Before: 'Almanya Genelinde Fuar ve Etkinlikler İçin',
+    eyebrow: 'Dünya Genelinde Hizmet Veriyoruz',
+    h1Before: 'Fuar ve Etkinlikler İçin',
     h1Highlight: 'Profesyonel Personel Desteği',
-    sub: 'Fuarlar ve şirket etkinlikleri için çok dilli hostes, catering ve stand destek hizmetleri sunuyoruz. Deneyimli ekibimiz, markanızı profesyonel şekilde temsil eder.',
+    sub: 'Fuarlar ve şirket etkinlikleri için çok dilli hostes, catering ve stand destek hizmetleri sunuyoruz. Almanya merkezli, dünya genelinde hizmet veren deneyimli ekibimiz markanızı profesyonel şekilde temsil eder.',
     ctaPrimary: 'Hemen Teklif Alın',
   },
 
@@ -437,7 +437,7 @@ const tr = {
     { title: '12+ Yıl Deneyim',      key: 'exp' as const },
     { title: '50+ Etkinlik',          key: 'events' as const },
     { title: '5 Dil',                 key: 'lang' as const },
-    { title: 'Almanya Genelinde',     key: 'de' as const },
+    { title: 'Dünya Genelinde',       key: 'de' as const },
   ],
 
   partners: {
@@ -447,16 +447,16 @@ const tr = {
   about: {
     eyebrow: 'Ajans Köln Hakkında',
     since: '2019\'dan beri fuar ve etkinlik sektöründe hizmet veriyoruz',
-    headline: 'Almanya Genelinde Başarılı Etkinlikler İçin',
+    headline: 'Başarılı Etkinlikler İçin',
     headlineLine2: 'Güvenilir Çözüm Ortağınız.',
-    body: 'Ajans Köln; kalite, güvenilirlik ve profesyonel hizmet anlayışıyla öne çıkmaktadır. Deneyimli personel, net süreçler ve yüksek kalite standartlarıyla firmalara, ajanslara ve organizatörlere destek sağlıyoruz.',
+    body: 'Ajans Köln; kalite, güvenilirlik ve profesyonel hizmet anlayışıyla öne çıkmaktadır. Almanya merkezli olup dünya genelinde faaliyet gösteren ekibimiz, deneyimli personel, net süreçler ve yüksek kalite standartlarıyla firmalara, ajanslara ve organizatörlere destek sağlıyoruz.',
     bullets: [
       'Deneyimli, çok dilli personel',
       'Planlı ve düzenli organizasyon ile sorunsuz süreçler',
       'Karşılama, servis ve fuar standı desteği için net hizmet paketleri',
     ],
     signature: 'Funda Ekiz',
-    mapTagline: 'Almanya Genelinde Hizmet',
+    mapTagline: 'Almanya Merkezli, Dünya Genelinde',
     mapKicker: 'Hizmet Bölgesi',
     mapCitiesLine: 'Köln · Düsseldorf · Frankfurt · Hannover · Berlin · Hamburg · Münih · Stuttgart · Leipzig',
   },
@@ -487,7 +487,7 @@ const tr = {
     items: [
       'Uzun Yıllara Dayanan Fuar Deneyimi',
       'Çok Dilli Ekip',
-      'Tüm Almanya\'da Hizmet',
+      'Dünya Genelinde Hizmet',
       'Tek Yetkili İletişim Kişisi',
     ],
   },
@@ -568,10 +568,10 @@ const tr = {
     phoneHref: 'tel:+491727532501',
     emailDisplay: 'ajanskoeln@gmail.com',
     emailHref: 'mailto:ajanskoeln@gmail.com',
-    cities: 'Almanya Geneli · Fuarlar · Roadshowlar · Şirket Etkinlikleri',
+    cities: 'Almanya & Dünya Geneli · Fuarlar · Roadshowlar · Şirket Etkinlikleri',
     rights: 'Tüm hakları saklıdır',
-    legalImprint: 'Impressum',
-    legalPrivacy: 'Datenschutz',
+    legalImprint: 'Künye',
+    legalPrivacy: 'Gizlilik Politikası',
   },
 
   faq: {
@@ -583,7 +583,7 @@ const tr = {
       },
       {
         q: 'Hangi şehirlerde hizmet veriyorsunuz?',
-        a: 'Tüm Almanya genelinde hizmet veriyoruz – Köln ve Frankfurt\'tan Hamburg, Berlin ve Münih\'e kadar. Hiçbir lokasyon çok uzak değil.',
+        a: 'Almanya genelinde – Köln ve Frankfurt\'tan Hamburg, Berlin ve Münih\'e kadar – hizmet veriyoruz ve talep üzerine uluslararası etkinliklere de destek sağlıyoruz.',
       },
       {
         q: 'Çok dilli personel var mı?',
