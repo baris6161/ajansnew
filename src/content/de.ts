@@ -4,11 +4,11 @@ export const site = {
 } as const
 
 export const hero = {
-  eyebrow: 'Deutschlandweit aktiv',
+  eyebrow: 'Deutschlandweit & International',
   h1Before: 'Professionelle Hostess- und Catering-Services für ',
   h1Highlight: 'Messen und Events',
   sub:
-    'Mehrsprachiges Personal, strukturierte Planung und professioneller Auftritt für Messen und Firmenevents in ganz Deutschland – von Köln und Frankfurt bis Hamburg, Berlin und München. Auf Anfrage auch international.',
+    'Mehrsprachiges Personal, strukturierte Planung und professioneller Auftritt für Messen und Firmenevents – von Köln, Frankfurt und Hamburg bis Berlin und München, und darüber hinaus weltweit.',
   ctaPrimary: 'Jetzt unverbindlich anfragen',
   ctaSecondary: 'Leistungen ansehen',
 } as const
@@ -17,7 +17,7 @@ export const trust = [
   { title: '12+ Jahre Erfahrung', key: 'exp' as const },
   { title: '50+ Events', key: 'events' as const },
   { title: '5 Sprachen', key: 'lang' as const },
-  { title: 'Deutschlandweit', key: 'de' as const },
+  { title: 'Weltweit aktiv', key: 'de' as const },
 ] as const
 
 export const partners = {
@@ -36,7 +36,7 @@ export const about = {
   ],
   signature: 'Funda Ekiz',
   /** Karte „Über uns“ – Städte als Punkte in AboutSection.tsx positioniert */
-  mapTagline: 'Ganz Deutschland im Einsatz',
+  mapTagline: 'Deutschlandweit & weltweit',
   mapKicker: 'Einsatzgebiet',
   mapCitiesLine:
     'Köln · Düsseldorf · Frankfurt · Hannover · Berlin · Hamburg · München · Stuttgart · Leipzig',
@@ -130,7 +130,7 @@ export const footer = {
   phoneHref: 'tel:+491727532501',
   emailDisplay: 'ajanskoeln@gmail.com',
   emailHref: 'mailto:ajanskoeln@gmail.com',
-  cities: 'Deutschlandweit · Messen · Roadshows · Firmenevents',
+  cities: 'Deutschlandweit & Weltweit · Messen · Roadshows · Firmenevents',
   legalImprint: 'Impressum',
   legalPrivacy: 'Datenschutz',
 } as const
