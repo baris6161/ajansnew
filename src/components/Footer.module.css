@@ -63,18 +63,16 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 0.3rem;
   font-size: 0.94rem;
-  line-height: 1.55;
+  line-height: 1.25;
   color: color-mix(in srgb, var(--surface) 78%, transparent);
 }
 
 .list a {
   color: inherit;
   text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  padding-block: 3px;
+  display: block;
   transition: color 0.2s ease;
 }
 
