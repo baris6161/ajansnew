@@ -30,7 +30,7 @@ const de = {
   },
 
   trust: [
-    { title: '10+ Jahre Erfahrung', key: 'exp' as const },
+    { title: '12+ Jahre Erfahrung', key: 'exp' as const },
     { title: '50+ Events',          key: 'events' as const },
     { title: '5 Sprachen',          key: 'lang' as const },
     { title: 'DE-Weit im Einsatz',  key: 'de' as const },
@@ -50,7 +50,6 @@ const de = {
       'Erfahrenes, mehrsprachiges Personal',
       'Strukturierte Planung und reibungslose Abläufe',
       'Klare Pakete für Empfang, Service und Messestand',
-      'Starke Präsenz auf Messen und Events',
     ],
     signature: 'Funda Ekiz',
     mapTagline: 'Deutschlandweit im Einsatz',
@@ -233,7 +232,7 @@ const en = {
   },
 
   trust: [
-    { title: '10+ Years Experience', key: 'exp' as const },
+    { title: '12+ Years Experience', key: 'exp' as const },
     { title: '50+ Events',           key: 'events' as const },
     { title: '5 Languages',          key: 'lang' as const },
     { title: 'Nationwide',           key: 'de' as const },
@@ -253,7 +252,6 @@ const en = {
       'Experienced, multilingual staff',
       'Structured planning and smooth processes',
       'Clear packages for reception, service and trade stands',
-      'Strong presence at trade fairs and events',
     ],
     signature: 'Funda Ekiz',
     mapTagline: 'Active Across Germany',
@@ -436,7 +434,7 @@ const tr = {
   },
 
   trust: [
-    { title: '10+ Yıl Deneyim',      key: 'exp' as const },
+    { title: '12+ Yıl Deneyim',      key: 'exp' as const },
     { title: '50+ Etkinlik',          key: 'events' as const },
     { title: '5 Dil',                 key: 'lang' as const },
     { title: 'Almanya Genelinde',     key: 'de' as const },
@@ -456,7 +454,6 @@ const tr = {
       'Deneyimli, çok dilli personel',
       'Planlı ve düzenli organizasyon ile sorunsuz süreçler',
       'Karşılama, servis ve fuar standı desteği için net hizmet paketleri',
-      'Fuar ve etkinliklerde güçlü kurumsal temsil',
     ],
     signature: 'Funda Ekiz',
     mapTagline: 'Almanya Genelinde Hizmet',

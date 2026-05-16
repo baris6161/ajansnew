@@ -38,7 +38,16 @@ export function CtaBand() {
               </span>
               <ArrowRight size={18} aria-hidden strokeWidth={2} />
             </a>
-            <a className={styles.channel} href={footer.emailHref}>
+            <a
+              className={styles.channel}
+              href={footer.emailHref}
+              onClick={(e) => {
+                // Force mailto: to open the OS mail client on desktop browsers
+                // (Arc and some Chromium builds intercept mailto: as navigation)
+                e.preventDefault()
+                window.location.href = footer.emailHref
+              }}
+            >
               <span className={styles.channelLeft}>
                 <span className={styles.icon} aria-hidden>
                   <Mail size={20} strokeWidth={1.75} />

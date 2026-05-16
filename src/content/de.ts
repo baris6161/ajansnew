@@ -14,7 +14,7 @@ export const hero = {
 } as const
 
 export const trust = [
-  { title: '10+ Jahre Erfahrung', key: 'exp' as const },
+  { title: '12+ Jahre Erfahrung', key: 'exp' as const },
   { title: '50+ Events', key: 'events' as const },
   { title: '5 Sprachen', key: 'lang' as const },
   { title: 'DE-Weit im Einsatz', key: 'de' as const },

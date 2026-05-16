@@ -142,9 +142,23 @@
   gap: 0.65rem 1.25rem;
 }
 
+/* 3rd bullet (odd last child) sits alone: span both columns, center it */
+.list li:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: calc(50% - 0.625rem);
+}
+
 @media (max-width: 768px) {
   .list {
     grid-template-columns: 1fr;
+  }
+
+  /* On mobile: the 3rd bullet is just a normal stacked item */
+  .list li:last-child:nth-child(odd) {
+    grid-column: auto;
+    justify-self: auto;
+    width: auto;
   }
 }
 

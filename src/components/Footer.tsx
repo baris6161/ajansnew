@@ -29,7 +29,15 @@ export function Footer() {
               <a href={footer.phoneHref}>{footer.phoneDisplay}</a>
             </li>
             <li>
-              <a href={footer.emailHref}>{footer.emailDisplay}</a>
+              <a
+                href={footer.emailHref}
+                onClick={(e) => {
+                  e.preventDefault()
+                  window.location.href = footer.emailHref
+                }}
+              >
+                {footer.emailDisplay}
+              </a>
             </li>
           </ul>
         </div>
