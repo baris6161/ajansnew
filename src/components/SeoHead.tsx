@@ -40,7 +40,7 @@ export function SeoHead({ page }: { page: SeoPageId }) {
       <meta name="twitter:image:alt" content={siteSeo.ogImageAlt} />
       <meta name="theme-color" content={siteSeo.themeColor} />
       <link rel="manifest" href="/manifest.webmanifest" />
-      {page === 'home' ? <link rel="preload" as="image" href={siteSeo.ogImagePath} /> : null}
+      {page === 'home' ? <link rel="preload" as="image" href={siteSeo.ogImagePath} type="image/webp" fetchPriority="high" /> : null}
       <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
     </Helmet>
   )

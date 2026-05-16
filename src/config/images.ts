@@ -9,16 +9,16 @@ const partners = '/images/partners'
 export const images = {
   /** Hero Bild 1 – Original */
   heroV1: `${base}/hero-funda-ekiz-event.png`,
-  /** Hero Bild 2 – Bankett-Keyvisual (aktuell aktiv) */
-  hero: `${base}/hero-keyvisual-v2.png`,
-  aboutPortrait: `${base}/funda-ekiz-about-portrait.png`,
-  serviceHostess: `${base}/service-hostess.png`,
-  serviceCatering: `${base}/service-catering.png`,
-  serviceStand: `${base}/service-stand-management.png`,
-  partnerAndMet: `${partners}/partner-logo-and-met-transparent.png`,
-  partnerElit: `${partners}/partner-logo-elit-transparent.png`,
-  partnerRentoya: `${partners}/partner-logo-rentoya-transparent.png`,
-  partnerOktTrailer: `${partners}/partner-logo-okt-trailer.png`,
+  /** Hero Bild 2 – Bankett-Keyvisual (aktuell aktiv) — WebP, 97% smaller */
+  hero: `${base}/hero-keyvisual-v2.webp`,
+  aboutPortrait: `${base}/funda-ekiz-about-portrait.webp`,
+  serviceHostess: `${base}/service-hostess.webp`,
+  serviceCatering: `${base}/service-catering.webp`,
+  serviceStand: `${base}/service-stand-management.webp`,
+  partnerAndMet: `${partners}/partner-logo-and-met-transparent.webp`,
+  partnerElit: `${partners}/partner-logo-elit-transparent.webp`,
+  partnerRentoya: `${partners}/partner-logo-rentoya-transparent.webp`,
+  partnerOktTrailer: `${partners}/partner-logo-okt-trailer.webp`,
 } as const
 
 export const imageAlts = {

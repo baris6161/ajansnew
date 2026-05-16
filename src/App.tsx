@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import styles from './App.module.css'
 import { SeoHead } from './components/SeoHead'
 import { LangProvider } from './context/lang'
@@ -73,6 +74,7 @@ export default function App() {
         <Route path="/nfc" element={<NfcPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
+      <SpeedInsights />
     </LangProvider>
   )
 }

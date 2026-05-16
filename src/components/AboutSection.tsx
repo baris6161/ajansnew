@@ -75,8 +75,8 @@ export function AboutSection() {
                 <img
                   src={images.aboutPortrait}
                   alt={imageAlts.aboutPortrait}
-                  width={960}
-                  height={1280}
+                  width={900}
+                  height={1124}
                   sizes="(max-width: 900px) 100vw, min(520px, 45vw)"
                   loading="lazy"
                   decoding="async"

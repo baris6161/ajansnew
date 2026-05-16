@@ -53,9 +53,10 @@ export function Hero() {
           className={styles.mediaImg}
           src={images.hero}
           alt={imageAlts.hero}
-          width={1920}
-          height={1080}
+          width={1400}
+          height={787}
           sizes="100vw"
+          loading="eager"
           decoding="async"
           fetchPriority="high"
         />

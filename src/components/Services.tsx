@@ -37,9 +37,9 @@ export function Services() {
               <img
                 src={imgByKey[item.key]}
                 alt={altByKey[item.key]}
-                width={1200}
-                height={825}
-                sizes="(max-width: 900px) 100vw, min(1200px, 90vw)"
+                width={900}
+                height={675}
+                sizes="(max-width: 900px) 100vw, min(900px, 33vw)"
                 loading="lazy"
                 decoding="async"
               />

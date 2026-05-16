@@ -71,7 +71,7 @@ export const siteSeo = {
   htmlLang: 'en',
   themeColor: '#2a211b',
   /** Relativer Pfad unter public, für OG und Preload */
-  ogImagePath: '/images/ajans-koeln/hero-keyvisual-v2.png',
+  ogImagePath: '/images/ajans-koeln/hero-keyvisual-v2.webp',
   ogImageWidth: 1920,
   ogImageHeight: 1080,
   ogImageAlt:
