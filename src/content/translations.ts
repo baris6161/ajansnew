@@ -42,7 +42,7 @@ const de = {
 
   about: {
     eyebrow: 'Über Ajans Köln',
-    since: 'Seit 2019 für Events und Messen im Einsatz',
+    since: 'Seit 2014 für Events und Messen im Einsatz',
     headline: 'Ihr Partner für erfolgreiche Veranstaltungen',
     headlineLine2: 'in Deutschland und weltweit',
     body: 'Ajans Köln steht für Qualität, Verlässlichkeit und repräsentativen Service. Wir unterstützen Unternehmen, Agenturen und Veranstalter mit erfahrenem Personal, klaren Abläufen und einem hohen Qualitätsanspruch.',
@@ -244,7 +244,7 @@ const en = {
 
   about: {
     eyebrow: 'About Ajans Köln',
-    since: 'Trusted partner for events since 2019',
+    since: 'Trusted partner for events since 2014',
     headline: 'Your Partner for Successful Events',
     headlineLine2: 'in Germany and Worldwide',
     body: 'Ajans Köln stands for quality, reliability and professional service. We support companies, agencies and organisers with experienced staff, clear processes and a high standard of quality.',
@@ -446,7 +446,7 @@ const tr = {
 
   about: {
     eyebrow: 'Biz Kimiz',
-    since: '2019\'dan beri sektördeyiz',
+    since: '2014\'ten beri sektördeyiz',
     headline: 'Etkinliğiniz Başarıya Ulaşsın',
     headlineLine2: 'Biz Hallederiz',
     body: 'Ajans Köln olarak kaliteyi ve güveni her şeyin önünde tutuyoruz. Almanya\'nın her şehrinde ve yurt dışında deneyimli ekibimizle şirketlere, ajanslara ve organizatörlere destek veriyoruz.',
