@@ -426,10 +426,10 @@ const tr = {
   },
 
   hero: {
-    eyebrow: 'Almanya Geneli & Uluslararası',
-    h1Before: 'Almanya Genelinde Fuar ve Etkinlikler İçin',
-    h1Highlight: 'Profesyonel Personel Desteği',
-    sub: 'Fuarlar ve şirket etkinlikleri için çok dilli hostes, catering ve stand destek hizmetleri sunuyoruz. Köln ve Frankfurt\'tan Hamburg, Berlin ve Münih\'e kadar tüm Almanya\'da – ve dünya genelinde.',
+    eyebrow: 'Almanya\'da ve Dünyada',
+    h1Before: 'Fuar ve Etkinlikleriniz İçin',
+    h1Highlight: 'Doğru Ekip, Doğru Yerde',
+    sub: 'Almanya\'nın dört bir yanında — Köln, Hamburg, Berlin, Münih — ve yurt dışında hostes, catering ve stand yönetimi işini biz üstleniyoruz. Siz sadece etkinliğinize odaklanın.',
     ctaPrimary: 'Hemen Teklif Alın',
   },
 
@@ -437,46 +437,46 @@ const tr = {
     { title: '12+ Yıl Deneyim',      key: 'exp' as const },
     { title: '50+ Etkinlik',          key: 'events' as const },
     { title: '5 Dil',                 key: 'lang' as const },
-    { title: 'Dünya Genelinde',       key: 'de' as const },
+    { title: 'Dünyaya Açık',          key: 'de' as const },
   ],
 
   partners: {
-    headline: 'Bize Güvenen Markalar ve İş Ortakları',
+    headline: 'Birlikte Çalıştığımız Markalar',
   },
 
   about: {
-    eyebrow: 'Ajans Köln Hakkında',
-    since: '2019\'dan beri fuar ve etkinlik sektöründe hizmet veriyoruz',
-    headline: 'Başarılı Etkinlikler İçin',
-    headlineLine2: 'Güvenilir Çözüm Ortağınız',
-    body: 'Ajans Köln; kalite, güvenilirlik ve profesyonel hizmet anlayışıyla öne çıkmaktadır. Almanya merkezli olup dünya genelinde faaliyet gösteren ekibimiz, deneyimli personel, net süreçler ve yüksek kalite standartlarıyla firmalara, ajanslara ve organizatörlere destek sağlıyoruz.',
+    eyebrow: 'Biz Kimiz',
+    since: '2019\'dan beri sektördeyiz',
+    headline: 'Etkinliğiniz Başarıya Ulaşsın',
+    headlineLine2: 'Biz Hallederiz',
+    body: 'Ajans Köln olarak kaliteyi ve güveni her şeyin önünde tutuyoruz. Almanya\'nın her şehrinde ve yurt dışında deneyimli ekibimizle şirketlere, ajanslara ve organizatörlere destek veriyoruz.',
     bullets: [
-      'Deneyimli, çok dilli personel',
-      'Planlı ve düzenli organizasyon ile sorunsuz süreçler',
-      'Karşılama, servis ve fuar standı desteği için net hizmet paketleri',
+      'Deneyimli, çok dilli ekip',
+      'Planlama bizde — siz etkinliğinize bakın',
+      'Karşılama, catering ve stand için net paketler',
     ],
     signature: 'Funda Ekiz',
-    mapTagline: 'Almanya Geneli & Dünya Geneli',
-    mapKicker: 'Hizmet Bölgesi',
+    mapTagline: 'Almanya\'dan Dünyaya',
+    mapKicker: 'Neredeyiz',
     mapCitiesLine: 'Köln · Düsseldorf · Frankfurt · Hannover · Berlin · Hamburg · Münih · Stuttgart · Leipzig',
   },
 
   services: {
-    headline: 'Fuar ve Etkinlikler için Hostes, Catering ve Stand Yönetimi',
+    headline: 'Fuar ve Etkinlikleriniz İçin Ne Yapıyoruz',
     items: [
       {
         title: 'Hostes Hizmetleri',
-        text: 'Karşılama, akreditasyon, promosyon ve stand desteği için profesyonel hostes ve fuar personeli.',
+        text: 'Karşılama, akreditasyon, promosyon veya stand desteği — doğru insanları bulup hazırlıyoruz.',
         key: 'hostess' as const,
       },
       {
         title: 'Catering ve İkram',
-        text: 'Her organizasyon için yüksek kaliteli catering, şık ikram hizmetleri ve net servis süreçleri.',
+        text: 'Etkinliğinize özel kaliteli catering ve şık ikram. Her detayı önceden planlarız.',
         key: 'catering' as const,
       },
       {
         title: 'Stand Yönetimi',
-        text: 'Kurulumdan yerinde koordinasyona kadar fuar standınızın eksiksiz organizasyonu ve yönetimi.',
+        text: 'Standınızın kurulumundan koordinasyonuna kadar her şeyi biz üstleniriz.',
         key: 'stand' as const,
       },
     ],
@@ -485,26 +485,26 @@ const tr = {
   whyUs: {
     headline: 'Neden Ajans Köln?',
     items: [
-      'Uzun Yıllara Dayanan Fuar Deneyimi',
+      'Yıllarca Kazanılmış Fuar Tecrübesi',
       'Çok Dilli Ekip',
-      'Almanya Geneli & Dünya Geneli',
-      'Tek Yetkili İletişim Kişisi',
+      'Almanya\'da ve Dünyada',
+      'Tek Bir Muhatap, Sıfır Karmaşa',
     ],
   },
 
   process: {
-    headline: 'Birlikte Nasıl Çalışıyoruz',
+    headline: 'Nasıl Çalışıyoruz',
     steps: [
-      { title: 'Talep',           text: 'Tarih, yer ve personel ihtiyacınızı bize iletin.' },
-      { title: 'İhtiyaç Analizi', text: 'Detayları birlikte ele alır, neye ihtiyaç duyulduğunu netleştiririz.' },
-      { title: 'Ekip Oluşturma',  text: 'Uygun personeli seçer ve müsaitliklerini teyit ederiz.' },
-      { title: 'Brifing',         text: 'Ekip, gereksinimlerinize göre hazırlanır ve bilgilendirilir.' },
-      { title: 'Etkinlik Günü',   text: 'Etkinlik günü dakik ve profesyonel hizmet.' },
+      { title: 'Talebi Alıyoruz',  text: 'Tarih, yer ve ihtiyacınızı bize bildirin — gerisini biz hallederiz.' },
+      { title: 'Konuşuyoruz',      text: 'Detayları birlikte netleştirip tam olarak neye ihtiyaç olduğunu çıkarırız.' },
+      { title: 'Ekibi Kuruyoruz',  text: 'Size en uygun personeli seçer, müsaitliğini onaylarız.' },
+      { title: 'Hazırlık',         text: 'Ekibi sizin taleplerinize göre hazırlar ve brifing yaparız.' },
+      { title: 'Etkinlik Günü',    text: 'Orada oluyoruz — zamanında, hazır ve işin ehli.' },
     ],
   },
 
   testimonials: {
-    headline: 'Müşterilerimiz Ne Diyor',
+    headline: 'Onlar Anlatsın',
     ariaPrev: 'Önceki yorum',
     ariaNext: 'Sonraki yorum',
     ariaLabel: 'Müşteri yorumları',
@@ -545,23 +545,23 @@ const tr = {
   },
 
   cta: {
-    headline: 'Başarılı Bir Etkinliğe Hazır mısınız?',
-    sub: 'Bize tarih, yer ve görevleri bildirin, en kısa sürede size geri döneceğiz.',
-    contactCue: 'Bize doğrudan ulaşın',
+    headline: 'Etkinliğinizi Birlikte Başarıya Taşıyalım',
+    sub: 'Tarih, yer ve ihtiyacınızı yazın — kısa sürede geri dönüyoruz.',
+    contactCue: 'Doğrudan yazın',
     whatsapp: 'WhatsApp',
     phone: 'Telefon',
     email: 'E-Posta',
   },
 
   footer: {
-    blurb: 'Fuarlar, roadshowlar ve şirket etkinlikleri için hostes, catering ve stand yönetimi hizmetleri, ilk temastan yerinde uygulamaya kadar.',
+    blurb: 'Fuardan şirket etkinliğine, ilk görüşmeden sahaya kadar hostes, catering ve stand yönetiminde yanınızdayız.',
     contactTitle: 'İletişim',
-    areasTitle: 'Hizmet Bölgeleri',
-    qualityTitle: 'Kalite Taahhüdü',
+    areasTitle: 'Neredeyiz',
+    qualityTitle: 'Kalite Garantimiz',
     quality: [
-      'Personel seçimi ve eğitimi',
-      'Şeffaf iletişim',
-      'Yerinde güvenilir süreçler',
+      'Özenle seçilmiş, eğitimli personel',
+      'Her adımda açık iletişim',
+      'Sahada güvenilir, sorunsuz süreç',
     ],
     addressLines: ['Ajans Köln Fair Organisation', 'Musterstraße 1', '50667 Köln'],
     phoneDisplay: '+49 172 7532501',
@@ -575,27 +575,27 @@ const tr = {
   },
 
   faq: {
-    headline: 'Sık Sorulan Sorular',
+    headline: 'Aklınızdaki Sorular',
     items: [
       {
-        q: 'Ne kadar önceden rezervasyon yapmalıyım?',
-        a: 'Müsaitlik durumuna göre etkinlikten birkaç gün önce bile talep iletebilirsiniz. Ne kadar erken olursa o kadar iyi olur.',
+        q: 'Ne kadar önceden haber versem yeter?',
+        a: 'Müsaitliğe göre son birkaç gün bile olsa talep alıyoruz. Ama ne kadar erken haberdar olursak o kadar rahat planlarız.',
       },
       {
-        q: 'Hangi şehirlerde hizmet veriyorsunuz?',
-        a: 'Almanya genelinde – Köln ve Frankfurt\'tan Hamburg, Berlin ve Münih\'e kadar – hizmet veriyoruz ve talep üzerine uluslararası etkinliklere de destek sağlıyoruz.',
+        q: 'Hangi şehirlerde çalışıyorsunuz?',
+        a: 'Almanya\'nın her yerinde — Köln, Frankfurt, Hamburg, Berlin, Münih ve daha fazlası. Yurt dışı etkinlikler için de buradayız.',
       },
       {
-        q: 'Çok dilli personel var mı?',
-        a: 'Evet. Ekibimiz Almanca, Türkçe ve İngilizce konuşuyor. Diğer diller talep üzerine mümkündür.',
+        q: 'Yabancı dil bilen personel var mı?',
+        a: 'Evet, ekibimizde Almanca, Türkçe ve İngilizce konuşanlar var. Başka dil gerekirse de çözüm buluruz.',
       },
       {
-        q: 'Catering personeli de temin ediyor musunuz?',
-        a: 'Evet, her ölçekte etkinlik için deneyimli catering personeli sağlıyoruz.',
+        q: 'Catering için de personel sağlıyor musunuz?',
+        a: 'Tabii. Küçük toplantıdan büyük fuara kadar deneyimli catering ekibi hazırlıyoruz.',
       },
       {
         q: 'Birden fazla gün için personel alabilir miyim?',
-        a: 'Evet, çok günlü görevlendirmeler sorunsuz şekilde planlanabilir.',
+        a: 'Tabii ki. Çok günlük çalışmalar zaten en çok karşılaştığımız durum — hiç sorun olmaz.',
       },
     ],
   },
