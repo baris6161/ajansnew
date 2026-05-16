@@ -448,7 +448,7 @@ const tr = {
     eyebrow: 'Biz Kimiz',
     since: '2014\'ten beri sektördeyiz',
     headline: 'Etkinliğiniz Başarıya Ulaşsın',
-    headlineLine2: 'Biz Hallederiz',
+    headlineLine2: '',
     body: 'Ajans Köln olarak kaliteyi ve güveni her şeyin önünde tutuyoruz. Almanya\'nın her şehrinde ve yurt dışında deneyimli ekibimizle şirketlere, ajanslara ve organizatörlere destek veriyoruz.',
     bullets: [
       'Deneyimli, çok dilli ekip',
